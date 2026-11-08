@@ -3,955 +3,153 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atelier Paname</title>
-<meta name="description" content="Atelier Paname — custom stair railings, tables, shelving and furniture in blackened steel, white oak and brass. Made in Brooklyn by a French Compagnon du Devoir.">
+<title>Atelier Banger | Unique Bronze Art &amp; Bespoke Furniture</title>
+<meta name="description" content="Unique bronze art &amp; bespoke furniture crafted with time-honored craftsmanship. Robin Miellet, Compagnon du Devoir, New York.">
+<link rel="icon" href="https://atelierbanger.com/images/logo/ab-4k-final-logo.png">
+<meta property="og:title" content="Atelier Banger | Unique Bronze Art &amp; Bespoke Furniture">
+<meta property="og:image" content="https://atelierbanger.com/images/hero/ab-hero-poster.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,300..600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  /* Palette: blackened steel, brushed brass as the single accent, warm oak, plaster for light sections. */
-  --steel:#0F1012;
-  --steel-2:#1A1C20;
-  --steel-3:#26292E;
-  --plaster:#ECEAE4;
-  --paper:#F5F3EE;
-  --ink:#151618;
-  --mute:#6D6A64;
-  --mute-d:rgba(236,234,228,.56);
-  --brass:#C9A24E;
-  --brass-deep:#8F6F33;
-  --line:rgba(21,22,24,.14);
-  --line-d:rgba(236,234,228,.14);
-  --display:"Bodoni Moda","Didot","Bodoni MT",Georgia,serif;
-  --serif:"Bodoni Moda","Didot",Georgia,serif;
-  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
-  --mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
-  /* Layout: spec-sheet grid — hairlines, mono labels, squared edges, didone headlines in sentence case. */
-  --gutter:clamp(16px,5vw,72px);
-  --max:1320px;
-  --r:2px;
-  color-scheme:dark;
-}
-*{box-sizing:border-box}
-html,body{margin:0}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--steel);color:var(--plaster);font-family:var(--body);font-weight:300;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%}
-a{color:inherit}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.005em;text-wrap:balance}
-h3{font-weight:500}
-p{margin:0}
-:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
-.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
-.mono{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
-.light{background:var(--plaster);color:var(--ink);color-scheme:light}
-.light .eyebrow{color:var(--brass-deep)}
-section{padding:clamp(56px,8vw,120px) 0}
-.plate{display:grid;grid-template-columns:auto 1fr auto;gap:18px clamp(16px,3vw,40px);align-items:end;border-top:1px solid var(--line-d);padding-top:16px;margin-bottom:clamp(28px,5vw,56px)}
-.light .plate{border-color:var(--line)}
-.plate .num{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute-d);padding-bottom:8px}
-.light .plate .num{color:var(--mute)}
-.plate h2{font-size:clamp(36px,4.6vw,64px)}
-.plate .lead{max-width:36ch;color:var(--mute-d);font-size:15px;line-height:1.5;padding-bottom:8px}
-.light .plate .lead{color:var(--mute)}
-@media (max-width:700px){.plate{grid-template-columns:auto 1fr}.plate .lead{grid-column:1/-1;padding-bottom:0}}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border:1px solid currentColor;border-radius:var(--r);font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
-.btn:hover{background:var(--plaster);color:var(--steel);border-color:var(--plaster)}
-.light .btn:hover{background:var(--ink);color:var(--plaster);border-color:var(--ink)}
-.btn.solid{background:var(--brass);border-color:var(--brass);color:var(--steel)}
-.btn.solid:hover{background:var(--plaster);border-color:var(--plaster);color:var(--steel)}
-.light .btn.solid:hover{background:var(--ink);border-color:var(--ink);color:var(--plaster)}
-.btn.sm{padding:9px 14px;font-size:10.5px}
-.btn .arr{width:12px;height:12px}
-
-/* ---------- Nav ---------- */
-.nav{position:sticky;top:0;z-index:40;background:rgba(15,16,18,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-d)}
-.nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand .mark{width:34px;height:34px;flex:0 0 34px}
-.brand .name{font-family:var(--display);font-weight:500;font-size:21px;letter-spacing:.01em;line-height:1}
-.brand .name small{display:block;font-family:var(--mono);font-weight:400;font-size:9px;letter-spacing:.2em;color:var(--brass);margin-top:4px;text-transform:uppercase}
-.nav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:24px}
-.nav ul a{text-decoration:none;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute-d);position:relative;padding:4px 0}
-.nav ul a:hover{color:var(--plaster)}
-.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--brass);transition:right .25s}
-.nav ul a:hover::after{right:0}
-.nav .tools{display:flex;align-items:center;gap:8px}
-.clock{display:flex;gap:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--mute-d);padding-right:10px;border-right:1px solid var(--line-d);margin-right:4px}
-.clock b{font-weight:500;color:var(--plaster);font-variant-numeric:tabular-nums}
-.clock i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--brass);margin-right:6px;vertical-align:1px;animation:blink 2s steps(1) infinite}
-@keyframes blink{50%{opacity:.25}}
-@media (prefers-reduced-motion:reduce){.clock i{animation:none}}
-.lang{display:flex;border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em}
-.lang button{padding:7px 10px;color:var(--mute-d)}
-.lang button[aria-pressed="true"]{background:var(--plaster);color:var(--steel)}
-.cartbtn{display:inline-flex;align-items:center;gap:10px;padding:8px 12px 8px 14px;border:1px solid var(--plaster);border-radius:var(--r);font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
-.cartbtn .n{font-family:var(--mono);font-size:10.5px;background:var(--brass);color:var(--steel);border-radius:var(--r);min-width:20px;height:20px;display:inline-grid;place-items:center;padding:0 6px;font-weight:500}
-.menubtn{display:none;width:40px;height:40px;place-items:center;border:1px solid var(--line-d);border-radius:var(--r)}
-@media (max-width:1060px){.clock{display:none}}
-@media (max-width:900px){
-  .nav ul{display:none;position:absolute;left:0;right:0;top:64px;background:var(--steel);border-bottom:1px solid var(--line-d);flex-direction:column;gap:0;padding:8px var(--gutter) 16px}
-  .nav ul.open{display:flex}
-  .nav ul a{display:block;padding:12px 0;font-size:13px}
-  .menubtn{display:grid;margin-left:auto}
-  .brand .name small{display:none}
-}
-
-/* ---------- Hero ---------- */
-.hero{position:relative;padding:clamp(40px,6vw,88px) 0 clamp(36px,5vw,72px);overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:
-  linear-gradient(var(--line-d) 1px,transparent 1px) 0 0/80px 80px,
-  linear-gradient(90deg,var(--line-d) 1px,transparent 1px) 0 0/80px 80px;
-  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 85%);mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 85%);pointer-events:none}
-.hero .wrap{position:relative}
-.hero .top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute-d);margin-bottom:clamp(28px,5vw,64px)}
-.hero .top b{color:var(--brass);font-weight:500}
-.hero h1{font-size:clamp(46px,7.4vw,112px);line-height:.96;letter-spacing:-.01em;margin:0 0 30px;max-width:14ch}
-.hero h1 .ser{font-style:italic;color:var(--brass)}
-.hero .row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end}
-.hero .sub{max-width:56ch;color:var(--mute-d);font-size:18px;line-height:1.5}
-.hero .sub b{color:var(--plaster);font-weight:400}
-.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.specs{border:1px solid var(--line-d);border-radius:var(--r);background:rgba(26,28,32,.6);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-.specs .h{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line-d);font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute-d)}
-.specs .h b{color:var(--brass);font-weight:500}
-.specs dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0}
-.specs dl div{padding:14px 14px 12px;border-right:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
-.specs dl div:nth-child(2n){border-right:0}
-.specs dl div:nth-last-child(-n+2){border-bottom:0}
-.specs dt{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute-d);margin-bottom:6px}
-.specs dd{margin:0;font-family:var(--display);font-weight:400;font-size:24px;line-height:1;letter-spacing:0;font-variant-numeric:tabular-nums}
-.specs dd small{display:block;font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.08em;color:var(--mute-d);text-transform:none;margin-top:5px}
-@media (max-width:860px){.hero .row{grid-template-columns:1fr}}
-
-/* ---------- Ticker ---------- */
-.ticker{border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d);overflow:hidden;padding:12px 0;background:var(--steel-2)}
-.ticker .track{display:flex;width:max-content;animation:slide 50s linear infinite}
-.ticker span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:0 26px;white-space:nowrap;color:var(--mute-d)}
-.ticker span::before{content:"";display:inline-block;width:6px;height:6px;background:var(--brass);margin-right:26px;vertical-align:1px;transform:rotate(45deg)}
-@keyframes slide{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.ticker .track{animation:none;flex-wrap:wrap;width:auto}}
-
-/* ---------- Material panels (stand-ins for photos) ---------- */
-.panel{position:relative;display:flex;overflow:hidden;background:var(--steel-3);isolation:isolate;border-radius:var(--r)}
-.panel .m{flex:1;position:relative}
-.panel::after{content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:overlay;opacity:.55;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .9 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>")}
-.panel .ph{position:absolute;inset:0;background-size:cover;background-position:center;z-index:1}
-.panel .dr{position:absolute;inset:0;z-index:1;width:100%;height:100%;background:linear-gradient(180deg,rgba(15,16,18,.08),rgba(15,16,18,.42))}
-.panel .dr path,.panel .dr line,.panel .dr rect,.panel .dr circle{fill:none;stroke:rgba(255,255,255,.92);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
-.panel .dr .b{stroke:var(--brass)}
-.panel .dr .f{fill:rgba(255,255,255,.06)}
-.ci .panel .dr,.mats .dr{display:none}
-.panel .strip{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:space-between;gap:10px;padding:8px 10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);background:linear-gradient(transparent,rgba(0,0,0,.45))}
-.panel .strip b{font-weight:500;color:#fff}
-.panel .seal{position:absolute;right:10px;top:10px;z-index:2;padding:4px 7px;border:1px solid rgba(255,255,255,.5);font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:rgba(255,255,255,.9);background:rgba(0,0,0,.25);border-radius:var(--r)}
-.mat-oak{background:repeating-linear-gradient(94deg,rgba(60,30,10,.14) 0 2px,transparent 2px 9px,rgba(60,30,10,.08) 9px 10px,transparent 10px 23px,rgba(60,30,10,.11) 23px 24px,transparent 24px 37px),linear-gradient(90deg,#b58b5c,#c69a68 28%,#ad7f4d 55%,#c0905c 80%,#a97a48)}
-.mat-walnut{background:repeating-linear-gradient(92deg,rgba(20,8,2,.22) 0 1.5px,transparent 1.5px 7px,rgba(20,8,2,.12) 7px 8px,transparent 8px 19px),linear-gradient(90deg,#5a3a26,#6e4a30 30%,#4e3220 58%,#6a4631 85%,#4a2f1e)}
-.mat-ash{background:repeating-linear-gradient(93deg,rgba(90,60,30,.12) 0 1.5px,transparent 1.5px 8px,rgba(90,60,30,.07) 8px 9px,transparent 9px 21px),linear-gradient(90deg,#d9c7a4,#e4d3b1 30%,#cdb98f 60%,#dfcda9 85%,#c9b48a)}
-.mat-steel{background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 3px),linear-gradient(135deg,#2b2d32,#17181b 40%,#2e3137 70%,#131417)}
-.mat-raw{background:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 2px),radial-gradient(ellipse at 30% 40%,#5a5247 0,transparent 50%),radial-gradient(ellipse at 70% 70%,#3e3a36 0,transparent 55%),linear-gradient(135deg,#46423d,#2f2c29)}
-.mat-brass{background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px),linear-gradient(135deg,#caa661,#8e6e34 45%,#d2b16e 72%,#9a7839)}
-.mat-marble{background:radial-gradient(ellipse at 20% 30%,rgba(120,120,125,.35),transparent 40%),radial-gradient(ellipse at 70% 80%,rgba(90,90,95,.3),transparent 45%),linear-gradient(135deg,#e9e7e2,#d6d3cc 50%,#ecebe6)}
-.mat-glass{background:linear-gradient(135deg,rgba(200,215,220,.55),rgba(150,170,180,.35) 50%,rgba(210,225,230,.6)),#9fb0b6}
-.mat-leather{background:linear-gradient(135deg,#3b2a24,#56392f 50%,#33231e)}
-
-/* ---------- Works ---------- */
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
-.chip{padding:8px 14px;border:1px solid var(--line-d);border-radius:var(--r);font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute-d)}
-.chip[aria-pressed="true"]{background:var(--plaster);color:var(--steel);border-color:var(--plaster)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{display:flex;flex-direction:column;text-align:left;padding:0;color:inherit;border:1px solid transparent;border-radius:var(--r);transition:border-color .2s}
-.card:hover{border-color:var(--line-d)}
-.card .panel{aspect-ratio:4/3.3}
-.card:hover .panel .m{filter:brightness(1.07)}
-.card .meta{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin:14px 12px 0}
-.card h3{font-size:23px}
-.card .yr{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--mute-d)}
-.card .mat{font-size:14px;color:var(--mute-d);margin:5px 12px 12px}
-.card.featured{grid-column:span 2}
-.card.featured .panel{aspect-ratio:16/9.4}
-@media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:600px){.grid{grid-template-columns:1fr}.card.featured{grid-column:span 1}.card.featured .panel{aspect-ratio:4/3.3}}
-
-/* ---------- Studio ---------- */
-.studio .cols{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,80px);align-items:start}
-.studio .text p{max-width:62ch;font-size:17px}
-.studio .text p+p{margin-top:18px}
-.studio .quote{font-family:var(--display);font-style:italic;font-size:clamp(26px,3vw,38px);line-height:1.2;margin:34px 0 10px;max-width:28ch}
-.studio .who{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.steps li{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
-.steps .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--brass-deep);padding-top:6px}
-.steps h3{font-size:22px;margin-bottom:6px}
-.steps p{color:var(--mute);font-size:15px;max-width:50ch}
-.mats{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:40px}
-.mats figure{margin:0}
-.mats .sw{aspect-ratio:1;border-radius:var(--r);border:1px solid var(--line)}
-.mats figcaption{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-top:8px}
-.cities{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:40px}
-.city{border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;background:var(--paper)}
-.city .l{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between}
-.city .v{font-family:var(--display);font-weight:400;font-size:28px;line-height:1;margin-top:8px}
-.city .c{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--mute);margin-top:6px;font-variant-numeric:tabular-nums}
-@media (max-width:860px){.studio .cols{grid-template-columns:1fr}.mats{grid-template-columns:repeat(3,1fr)}}
-
-/* ---------- Craft ---------- */
-.know{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.know article{padding:clamp(22px,3vw,36px);border-right:1px solid var(--line);background:var(--paper)}
-.know article:last-child{border-right:0}
-.know .n{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--brass-deep);margin-bottom:26px}
-.know h3{font-size:27px;margin-bottom:12px}
-.know p{color:var(--mute);font-size:15px}
-.know ul{margin:16px 0 0;padding:0;list-style:none;font-size:14.5px}
-.know li{padding:8px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
-.know li span:last-child{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--mute);white-space:nowrap}
-@media (max-width:860px){.know{grid-template-columns:1fr}.know article{border-right:0;border-bottom:1px solid var(--line)}.know article:last-child{border-bottom:0}}
-
-/* ---------- Shop ---------- */
-.shop .note{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);margin-bottom:34px;background:var(--paper)}
-.shop .note div{padding:14px 16px;border-right:1px solid var(--line);font-size:14px;color:var(--mute)}
-.shop .note div:last-child{border-right:0}
-.shop .note b{display:block;font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:4px}
-@media (max-width:760px){.shop .note{grid-template-columns:1fr}.shop .note div{border-right:0;border-bottom:1px solid var(--line)}.shop .note div:last-child{border-bottom:0}}
-.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.prod{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .2s}
-.prod:hover{border-color:var(--brass)}
-.prod .panel{aspect-ratio:1;border-radius:0}
-.prod .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1;gap:6px}
-.prod h3{font-size:21px}
-.prod .desc{font-size:14px;color:var(--mute);flex:1}
-.prod .dim{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
-.prod .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;padding-top:14px;border-top:1px solid var(--line)}
-.prod .price{font-family:var(--display);font-weight:400;font-size:25px;font-variant-numeric:tabular-nums}
-.prod .lead{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-deep)}
-.prod .added{background:var(--ink);color:var(--plaster);border-color:var(--ink)}
-@media (max-width:1100px){.pgrid{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:820px){.pgrid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:480px){.pgrid{grid-template-columns:1fr}}
-
-/* ---------- Commission ---------- */
-.commission .wrap{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(28px,5vw,80px)}
-.commission h2{font-size:clamp(36px,4.6vw,66px);margin:14px 0 20px}
-.commission h2 .ser{font-style:italic;color:var(--brass)}
-.commission .lead{color:var(--mute-d);max-width:48ch;font-size:17px}
-.commission .list{margin:30px 0 0;padding:0;list-style:none;border-top:1px solid var(--line-d)}
-.commission .list li{padding:12px 0;border-bottom:1px solid var(--line-d);display:flex;justify-content:space-between;gap:12px;font-size:15px}
-.commission .list li span:last-child{color:var(--brass);font-family:var(--mono);font-size:11px;letter-spacing:.08em;white-space:nowrap}
-form.f{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-form.f .full{grid-column:1/-1}
-.fld label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px;color:var(--mute-d)}
-.light .fld label{color:var(--mute)}
-.fld input,.fld select,.fld textarea{width:100%;padding:12px 14px;border:1px solid var(--line-d);background:rgba(255,255,255,.04);color:inherit;font:inherit;font-weight:300;border-radius:var(--r)}
-.light .fld input,.light .fld select,.light .fld textarea{border-color:var(--line);background:#fff}
-.fld textarea{min-height:120px;resize:vertical}
-.fld select option{color:#111}
-.f .actions{grid-column:1/-1;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px}
-.f .hint{font-size:13.5px;color:var(--mute-d)}
-.light .f .hint{color:var(--mute)}
-@media (max-width:860px){.commission .wrap{grid-template-columns:1fr}form.f{grid-template-columns:1fr}}
-
-/* ---------- Footer ---------- */
-footer{background:var(--steel);color:var(--mute-d);border-top:1px solid var(--line-d);padding:56px 0 28px}
-footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
-footer h4{font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
-footer p,footer li{font-size:14.5px;line-height:1.6}
-footer ul{list-style:none;margin:0;padding:0}
-footer a{text-decoration:none}
-footer a:hover{color:var(--plaster)}
-footer .big{font-family:var(--display);font-weight:500;font-size:32px;color:var(--plaster);margin-bottom:10px;line-height:1}
-footer .legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:44px;padding-top:18px;border-top:1px solid var(--line-d);font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:rgba(236,234,228,.4)}
-@media (max-width:860px){footer .cols{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){footer .cols{grid-template-columns:1fr}}
-
-/* ---------- Cart drawer ---------- */
-.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
-.scrim.on{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--paper);color:var(--ink);color-scheme:light;z-index:60;transform:translateX(102%);transition:transform .32s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.4)}
-.drawer.on{transform:none}
-.drawer header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--line)}
-.drawer header h3{font-size:26px}
-.drawer .items{flex:1;overflow:auto;padding:8px 22px}
-.ci{display:grid;grid-template-columns:64px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
-.ci .panel{aspect-ratio:1}
-.ci .t{font-family:var(--display);font-weight:500;font-size:18px}
-.ci .s{font-size:13px;color:var(--mute)}
-.ci .q{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:var(--r);margin-top:8px}
-.ci .q button{width:28px;height:26px;display:grid;place-items:center}
-.ci .q span{font-family:var(--mono);font-size:12px;min-width:22px;text-align:center}
-.ci .p{font-family:var(--display);font-weight:400;font-size:19px;font-variant-numeric:tabular-nums;text-align:right}
-.ci .rm{display:block;margin-top:6px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);text-decoration:underline;text-underline-offset:3px}
-.drawer .empty{padding:40px 0;text-align:center;color:var(--mute)}
-.drawer footer{background:none;border-top:1px solid var(--line);padding:18px 22px 22px;color:var(--ink)}
-.drawer footer .tot{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
-.drawer footer .tot span{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
-.drawer footer .tot b{font-family:var(--display);font-weight:400;font-size:28px;font-variant-numeric:tabular-nums}
-.drawer footer .fine{font-size:12.5px;color:var(--mute);margin-bottom:14px}
-.xbtn{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:var(--r)}
-
-/* ---------- Modals ---------- */
-.modal{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.6)}
-.modal.on{display:flex}
-.modal .box{background:var(--paper);color:var(--ink);color-scheme:light;width:min(960px,100%);max-height:calc(100% - 32px);overflow:auto;position:relative;border-radius:var(--r);box-shadow:0 30px 80px rgba(0,0,0,.5)}
-.modal .box.narrow{width:min(640px,100%)}
-.modal .x{position:absolute;top:12px;right:12px;z-index:3;background:var(--paper)}
-.detail{display:grid;grid-template-columns:1.1fr .9fr}
-.detail .panel{aspect-ratio:4/3.6;min-height:100%;border-radius:0}
-.detail .info{padding:clamp(22px,3vw,40px)}
-.detail h3{font-size:clamp(30px,3.4vw,44px);margin:8px 0 16px}
-.detail .spec{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:14.5px;margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line)}
-.detail .spec dt{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding-top:3px}
-.detail .spec dd{margin:0}
-.detail .desc{color:var(--mute);font-size:15.5px}
-.detail .acts{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
-@media (max-width:760px){.detail{grid-template-columns:1fr}.detail .panel{aspect-ratio:4/3}}
-.order{padding:clamp(22px,3vw,36px)}
-.order h3{font-size:34px;margin:6px 0 18px}
-.order .sum{border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin:0 0 22px;font-size:14.5px;background:#fff}
-.order .sum div{display:flex;justify-content:space-between;gap:12px;padding:5px 0}
-.order .sum div.tt{border-top:1px solid var(--line);margin-top:6px;padding-top:10px;font-family:var(--display);font-size:20px}
-.done{padding:clamp(24px,3vw,40px);text-align:center}
-.done h3{font-size:34px;margin:12px 0 10px}
-.done p{color:var(--mute);max-width:48ch;margin:0 auto}
-.done pre{text-align:left;white-space:pre-wrap;font-family:var(--mono);font-size:12px;line-height:1.55;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:22px 0;max-height:240px;overflow:auto}
-.done .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
-.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--brass);color:var(--steel);padding:11px 16px;border-radius:var(--r);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:0;transition:.3s;z-index:80;pointer-events:none}
-.toast.on{opacity:1;transform:translate(-50%,0)}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:{700:'#3a3a3a',800:'#2a2a2a',900:'#1a1a1a'},cream:{100:'#f5f5dc',200:'#e8e8ce',300:'#dcdcbe',400:'#cfcfae',600:'#9a9a7a',700:'#7a7a5a',800:'#5a5a3a'},bronze:{300:'#e0b98d',400:'#d4a373',500:'#cd7f32',600:'#b87333',700:'#a0522d',800:'#7a3f22'}},fontFamily:{sans:['Inter','system-ui','sans-serif'],serif:['"Playfair Display"','Georgia','serif']},keyframes:{fadeIn:{'0%':{opacity:'0'},'100%':{opacity:'1'}},slideUp:{'0%':{transform:'translateY(30px)',opacity:'0'},'100%':{transform:'translateY(0)',opacity:'1'}}},animation:{'fade-in':'fadeIn .6s ease-out both','slide-up':'slideUp .8s ease-out both'}}}}</script>
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-
-<!-- ============ NAV ============ -->
-<nav class="nav" aria-label="Main navigation">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="Atelier Paname, home">
-      <svg class="mark" viewBox="0 0 34 34" aria-hidden="true">
-        <rect x=".75" y=".75" width="32.5" height="32.5" rx="2" fill="#1A1C20" stroke="#ECEAE4" stroke-width="1.5"/>
-        <path d="M6 26 L28 8" stroke="#C9A24E" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M11 26 V21.9 M17 26 V17 M23 26 V12.1" stroke="#ECEAE4" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M5 26.5 H29" stroke="#ECEAE4" stroke-width="1.6" stroke-linecap="round"/>
-        <circle cx="28" cy="8" r="2" fill="#C9A24E"/>
-      </svg>
-      <span class="name">Atelier Paname<small data-i18n="brand.sub">Brooklyn, NY · Est. Paris</small></span>
-    </a>
-    <ul id="menu">
-      <li><a href="#works" data-i18n="nav.works">Works</a></li>
-      <li><a href="#studio" data-i18n="nav.studio">Studio</a></li>
-      <li><a href="#craft" data-i18n="nav.craft">Craft</a></li>
-      <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
-      <li><a href="#commission" data-i18n="nav.commission">Commission</a></li>
-    </ul>
-    <div class="tools">
-      <div class="clock" aria-label="Studio time"><span><i></i>BKLYN <b id="clkNy">--:--</b></span><span>PARIS <b id="clkPa">--:--</b></span></div>
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
-      </div>
-      <button type="button" class="cartbtn" id="cartOpen" aria-haspopup="dialog"><span data-i18n="nav.cart">Cart</span><span class="n" id="cartCount">0</span></button>
-      <button type="button" class="menubtn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<!-- ============ HERO ============ -->
-<header class="hero" id="top">
-  <div class="wrap">
-    <div class="top">
-      <span><b>Compagnon du Devoir</b> · <span data-i18n="hero.top1">Metal &amp; wood furniture</span></span>
-      <span>40.6734° N, 74.0083° W · Red Hook, Brooklyn</span>
-      <span data-i18n="hero.top3">Made to order · Ships nationwide</span>
-    </div>
-    <h1 data-i18n-html="hero.title">Paris craft.<br>New York <span class="ser">scale.</span></h1>
-    <div class="row">
-      <div>
-        <p class="sub" data-i18n-html="hero.sub"><b>Stair railings, dining tables, shelving and consoles</b> in blackened steel, white oak and brass. Designed and built by hand in a Red Hook workshop by Robin Mielleux, a French Compagnon du Devoir, for brownstones, lofts and apartments across the five boroughs.</p>
-        <div class="cta">
-          <a class="btn solid" href="#works" data-i18n="hero.cta1">See the works</a>
-          <a class="btn" href="#shop" data-i18n="hero.cta2">Shop the collection</a>
-        </div>
-      </div>
-      <div class="specs" aria-label="Studio at a glance">
-        <div class="h"><span data-i18n="sp.h">Studio sheet</span><b>AP · 001</b></div>
-        <dl>
-          <div><dt data-i18n="sp.1">Admitted Compagnon</dt><dd>2016<small data-i18n="sp.1s">Tour de France, 7 cities</small></dd></div>
-          <div><dt data-i18n="sp.2">In New York since</dt><dd>2019<small data-i18n="sp.2s">Workshop in Red Hook</small></dd></div>
-          <div><dt data-i18n="sp.3">Pieces installed</dt><dd>160+<small data-i18n="sp.3s">NYC, Hudson Valley, Hamptons</small></dd></div>
-          <div><dt data-i18n="sp.4">Lead time</dt><dd data-i18n-html="sp.4v">6–14 <span style="font-family:var(--mono);font-size:.45em;letter-spacing:.1em">WKS</span><small data-i18n="sp.4s">White-glove delivery in NYC</small></dd></div>
-        </dl>
-      </div>
-    </div>
-  </div>
+<body class="font-sans overflow-x-hidden bg-charcoal-900 text-cream-100">
+<header id="siteHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-6">
+<div class="container mx-auto px-6 flex items-center justify-between">
+<a class="hover:opacity-80 transition-opacity -my-4 md:-my-10 relative z-10" href="index.html" aria-label="Atelier Banger, home"><img alt="Atelier Banger Logo" width="108" height="135" class="w-auto h-32 md:h-48" src="https://atelierbanger.com/images/logo/ab-4k-final-logo.png"></a>
+<nav class="hidden md:flex items-center space-x-8"><a class="text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="services/">Services</a><a class="text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="portfolio/">Portfolio</a><div class="relative group"><button class="flex items-center gap-1 text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" aria-haspopup="true">Collection<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide transition-transform duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"><div class="bg-black/90 backdrop-blur-md border border-cream-800/30 rounded-lg py-2 min-w-[180px] shadow-xl">
+<a class="block px-4 py-2.5 text-sm text-cream-200 hover:text-bronze-400 hover:bg-white/5 transition-colors uppercase tracking-wider font-medium" href="collection/">Banger Collection</a>
+<a class="block px-4 py-2.5 text-sm text-cream-200 hover:text-bronze-400 hover:bg-white/5 transition-colors uppercase tracking-wider font-medium" href="artisans/">FORGED BY CRAFTSMEN</a></div></div></div><a class="text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="about/">About</a><a class="text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="contact/">Contact</a></nav>
+<button id="menuBtn" class="md:hidden text-cream-100 hover:text-bronze-500 transition-colors p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide " aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+</div>
+<div id="mobileMenu" class="hidden md:hidden bg-black/95 backdrop-blur-md border-t border-cream-800/30 mt-4"><div class="container mx-auto px-6 py-6"><a class="block py-3 text-lg text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="services/">Services</a><a class="block py-3 text-lg text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="portfolio/">Portfolio</a><a class="block py-3 text-lg text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="about/">About</a><a class="block py-3 text-lg text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="contact/">Contact</a><a class="block py-3 text-lg text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="collection/">Banger Collection</a><a class="block py-3 text-lg text-cream-100 hover:text-bronze-500 transition-colors text-sm uppercase tracking-wider font-medium" href="artisans/">Forged by Craftsmen</a></div></div>
 </header>
 
-<div class="ticker" aria-hidden="true"><div class="track" id="ticker"></div></div>
-
-<!-- ============ WORKS ============ -->
-<section id="works">
-  <div class="wrap">
-    <div class="plate">
-      <span class="num">01 / 05</span>
-      <h2 data-i18n="wk.title">Works</h2>
-      <p class="lead" data-i18n="wk.lead">Commissioned pieces installed in New York homes and businesses. Tap a piece for its details.</p>
-    </div>
-    <div class="filters" role="group" aria-label="Filter works" id="filters">
-      <button type="button" class="chip" data-f="all" aria-pressed="true" data-i18n="f.all">All</button>
-      <button type="button" class="chip" data-f="railing" aria-pressed="false" data-i18n="f.railing">Stair railings</button>
-      <button type="button" class="chip" data-f="table" aria-pressed="false" data-i18n="f.table">Tables</button>
-      <button type="button" class="chip" data-f="shelving" aria-pressed="false" data-i18n="f.shelving">Shelving</button>
-      <button type="button" class="chip" data-f="furniture" aria-pressed="false" data-i18n="f.furn">Furniture</button>
-    </div>
-    <div class="grid" id="gallery"></div>
-  </div>
+<main class="min-h-screen">
+<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<video autoplay muted loop playsinline poster="https://atelierbanger.com/images/hero/ab-hero-poster.webp" class="absolute inset-0 w-full h-full object-cover"><source src="https://atelierbanger.com/images/hero/ab-hero-video-cropped.mp4" type="video/mp4"></video>
+<div class="absolute inset-0 bg-black/50"></div></div>
+<div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+<h1 class="text-6xl md:text-8xl font-serif text-cream-100 mb-6 animate-fade-in">Atelier Banger</h1>
+<p class="text-xl md:text-2xl text-bronze-400 mb-4 font-light animate-slide-up" style="animation-delay:.2s">Unique Pieces of Furniture</p>
+<p class="text-lg text-cream-200 max-w-2xl mx-auto mb-12 animate-slide-up" style="animation-delay:.4s">Bronze Artistry | Bespoke Metalwork | <span class="whitespace-nowrap">New York</span></p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay:.6s">
+<a class="px-8 py-4 bg-bronze-600 hover:bg-bronze-700 text-black font-semibold rounded transition-all transform hover:scale-105 min-h-[48px] text-center" href="portfolio/">View Portfolio</a>
+<a class="px-8 py-4 bg-transparent border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all min-h-[48px] text-center" href="contact/">Commission a Piece</a></div></div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
 </section>
 
-<!-- ============ STUDIO ============ -->
-<section class="studio light" id="studio">
-  <div class="wrap">
-    <div class="plate">
-      <span class="num">02 / 05</span>
-      <h2 data-i18n="st.title">The studio</h2>
-      <p class="lead" data-i18n="st.lead">A French Compagnon du Devoir, trained on the Tour de France, building in Brooklyn.</p>
-    </div>
-    <div class="cols">
-      <div class="text">
-        <p data-i18n="st.p1">Robin Mielleux learned iron and wood on the road. At seventeen he left for the Tour de France of the Compagnons du Devoir, the French guild whose apprentices change city and workshop every year: forge in Lyon, art metalwork in Strasbourg, cabinetmaking in Bordeaux, steel framing in Nantes, then Tours, Angers and Marseille. He was admitted as a Compagnon in 2016 after his reception piece, a steel and walnut console built without a single screw or drop of glue.</p>
-        <p data-i18n="st.p2">In 2019 he moved to New York and set up in a former shipping warehouse in Red Hook. The work changed scale with the city: railings for four-storey brownstone stairs, twelve-foot dining tables for Tribeca lofts, floor-to-ceiling libraries on the Upper West Side. The method did not. Steel carries, wood receives, brass marks the joints. Nothing is hidden: a through-tenon stays visible, a rivet stays a rivet.</p>
-        <p class="quote" data-i18n="st.quote">“A true joint doesn’t need decorating. It needs to be true.”</p>
-        <p class="who" data-i18n="st.who">Robin Mielleux, Compagnon metalworker &amp; cabinetmaker</p>
-        <div class="cities">
-          <div class="city"><div class="l"><span data-i18n="ci.1">Workshop</span><span>EST</span></div><div class="v">Red Hook, BK</div><div class="c">40.6734° N · 74.0083° W</div></div>
-          <div class="city"><div class="l"><span data-i18n="ci.2">Trained</span><span>CET</span></div><div class="v">Paris, FR</div><div class="c">48.8566° N · 2.3522° E</div></div>
-        </div>
-        <div class="mats" aria-label="Materials">
-          <figure><div class="sw mat-oak"></div><figcaption data-i18n="m.oak">White oak</figcaption></figure>
-          <figure><div class="sw mat-walnut"></div><figcaption data-i18n="m.walnut">Black walnut</figcaption></figure>
-          <figure><div class="sw mat-steel"></div><figcaption data-i18n="m.steel">Blackened steel</figcaption></figure>
-          <figure><div class="sw mat-raw"></div><figcaption data-i18n="m.raw">Waxed raw steel</figcaption></figure>
-          <figure><div class="sw mat-brass"></div><figcaption data-i18n="m.brass">Brushed brass</figcaption></figure>
-          <figure><div class="sw mat-marble"></div><figcaption data-i18n="m.marble">Honed marble</figcaption></figure>
-        </div>
-      </div>
-      <div>
-        <ol class="steps">
-          <li><span class="k">01</span><div><h3 data-i18n="s1.t">Site visit</h3><p data-i18n="s1.p">Measurements, photos, a conversation about how the piece will be used. Co-op and building rules checked up front. You leave with a freehand sketch.</p></div></li>
-          <li><span class="k">02</span><div><h3 data-i18n="s2.t">Drawings</h3><p data-i18n="s2.p">Scaled drawings, material and finish selection, patina samples shipped to you. Firm quote and schedule at this stage.</p></div></li>
-          <li><span class="k">03</span><div><h3 data-i18n="s3.t">Build</h3><p data-i18n="s3.p">Forging, TIG welding, milling and joinery in Red Hook. Weekly progress photos. Finishes applied and cured in the shop.</p></div></li>
-          <li><span class="k">04</span><div><h3 data-i18n="s4.t">Install</h3><p data-i18n="s4.p">White-glove delivery and installation by the studio in the five boroughs; crated freight and remote install guidance elsewhere. Care kit included.</p></div></li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="py-24 bg-charcoal-900">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl md:text-5xl font-serif text-center text-cream-100 mb-4">Featured Work</h2>
+<p class="text-center text-cream-300 mb-16 max-w-2xl mx-auto">Explore a selection of commissioned pieces showcasing mastery in bronze, steel, and architectural metalwork</p>
+<div class="relative max-w-6xl mx-auto" id="carousel">
+<div class="relative">
+<div class="relative h-[280px] md:h-[600px] overflow-hidden rounded-t-lg md:rounded-lg bg-charcoal-800"><div class="slide absolute inset-0 transition-opacity duration-700 opacity-100" data-i="0">
+<img alt="C-LIGHT — Lighting by Atelier Banger" class="absolute inset-0 w-full h-full object-cover" src="https://atelierbanger.com/images/portfolio/lighting/ab-cLight-2.webp">
+<div class="hidden md:block absolute inset-0 bg-black/40"></div>
+<div class="hidden md:flex absolute inset-0 items-center justify-center p-12"><div class="text-center max-w-2xl">
+<p class="text-bronze-400 text-sm uppercase tracking-wider mb-2">Lighting</p><h3 class="text-4xl font-serif text-cream-100 mb-4">C-LIGHT</h3>
+<p class="text-cream-200 mb-8">The C-Light Collection is a new Atelier Banger lighting series designed for expansive interiors and large living rooms.</p>
+<a class="inline-block px-6 py-2 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all" href="collection/#c-light">View Project</a></div></div></div><div class="slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none" data-i="1">
+<img alt="Bronze Door — Architectural by Atelier Banger" class="absolute inset-0 w-full h-full object-cover" src="https://atelierbanger.com/images/portfolio/architectural/Door/ab-door-temple-2.webp">
+<div class="hidden md:block absolute inset-0 bg-black/40"></div>
+<div class="hidden md:flex absolute inset-0 items-center justify-center p-12"><div class="text-center max-w-2xl">
+<p class="text-bronze-400 text-sm uppercase tracking-wider mb-2">Architectural</p><h3 class="text-4xl font-serif text-cream-100 mb-4">Bronze Door</h3>
+<p class="text-cream-200 mb-8">NYC</p>
+<a class="inline-block px-6 py-2 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all" href="portfolio/temple-door-2019/">View Project</a></div></div></div><div class="slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none" data-i="2">
+<img alt="Beam Table — Furniture by Atelier Banger" class="absolute inset-0 w-full h-full object-cover" src="https://atelierbanger.com/images/Banger-Collection/ab-beam-tbl-3.webp">
+<div class="hidden md:block absolute inset-0 bg-black/40"></div>
+<div class="hidden md:flex absolute inset-0 items-center justify-center p-12"><div class="text-center max-w-2xl">
+<p class="text-bronze-400 text-sm uppercase tracking-wider mb-2">Furniture</p><h3 class="text-4xl font-serif text-cream-100 mb-4">Beam Table</h3>
+<p class="text-cream-200 mb-8">Collection</p>
+<a class="inline-block px-6 py-2 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all" href="collection/#beam-table">View Project</a></div></div></div><div class="slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none" data-i="3">
+<img alt="Patinated Brass Kitchen Bar Shelving — Furniture by Atelier Banger" class="absolute inset-0 w-full h-full object-cover" src="https://atelierbanger.com/images/portfolio/furniture/industrial-luxury-bar-brass-pipe-shelving.webp">
+<div class="hidden md:block absolute inset-0 bg-black/40"></div>
+<div class="hidden md:flex absolute inset-0 items-center justify-center p-12"><div class="text-center max-w-2xl">
+<p class="text-bronze-400 text-sm uppercase tracking-wider mb-2">Furniture</p><h3 class="text-4xl font-serif text-cream-100 mb-4">Patinated Brass Kitchen Bar Shelving</h3>
+<p class="text-cream-200 mb-8">Los Angeles, CA.</p>
+<a class="inline-block px-6 py-2 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all" href="portfolio/patinated-brass-kitchen-bar-shelving-2022/">View Project</a></div></div></div></div>
+<button class="prev absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-bronze-600 text-white p-3 rounded-full transition-colors" aria-label="Previous project"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide " aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+<button class="next absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-bronze-600 text-white p-3 rounded-full transition-colors" aria-label="Next project"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide " aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+</div>
+<div class="block md:hidden bg-charcoal-800 px-6 py-5 rounded-b-lg text-center"><div class="mcap " data-i="0"><p class="text-bronze-400 text-xs uppercase tracking-wider mb-1">Lighting</p><h3 class="text-2xl font-serif text-cream-100 mb-2">C-LIGHT</h3><p class="text-cream-200 text-sm mb-4">The C-Light Collection is a new Atelier Banger lighting series designed for expansive interiors and large living rooms.</p><a class="inline-block px-5 py-2.5 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all text-sm" href="collection/#c-light">View Project</a></div><div class="mcap hidden" data-i="1"><p class="text-bronze-400 text-xs uppercase tracking-wider mb-1">Architectural</p><h3 class="text-2xl font-serif text-cream-100 mb-2">Bronze Door</h3><p class="text-cream-200 text-sm mb-4">NYC</p><a class="inline-block px-5 py-2.5 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all text-sm" href="portfolio/temple-door-2019/">View Project</a></div><div class="mcap hidden" data-i="2"><p class="text-bronze-400 text-xs uppercase tracking-wider mb-1">Furniture</p><h3 class="text-2xl font-serif text-cream-100 mb-2">Beam Table</h3><p class="text-cream-200 text-sm mb-4">Collection</p><a class="inline-block px-5 py-2.5 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all text-sm" href="collection/#beam-table">View Project</a></div><div class="mcap hidden" data-i="3"><p class="text-bronze-400 text-xs uppercase tracking-wider mb-1">Furniture</p><h3 class="text-2xl font-serif text-cream-100 mb-2">Patinated Brass Kitchen Bar Shelving</h3><p class="text-cream-200 text-sm mb-4">Los Angeles, CA.</p><a class="inline-block px-5 py-2.5 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all text-sm" href="portfolio/patinated-brass-kitchen-bar-shelving-2022/">View Project</a></div></div>
+<div class="flex justify-center mt-6 space-x-2"><button class="dot h-2 rounded-full transition-all bg-bronze-500 w-8" data-i="0" aria-label="Go to project 1"></button><button class="dot h-2 rounded-full transition-all bg-cream-600 w-2" data-i="1" aria-label="Go to project 2"></button><button class="dot h-2 rounded-full transition-all bg-cream-600 w-2" data-i="2" aria-label="Go to project 3"></button><button class="dot h-2 rounded-full transition-all bg-cream-600 w-2" data-i="3" aria-label="Go to project 4"></button></div>
+</div>
+<div class="text-center mt-12"><a class="inline-block px-8 py-3 bg-bronze-600 hover:bg-bronze-700 text-black font-semibold rounded transition-colors" href="portfolio/">View Full Portfolio</a></div>
+</div></section>
 
-<!-- ============ CRAFT ============ -->
-<section class="light" id="craft" style="padding-top:0">
-  <div class="wrap">
-    <div class="plate">
-      <span class="num">03 / 05</span>
-      <h2 data-i18n="cr.title">What we build</h2>
-      <p class="lead" data-i18n="cr.lead">Furniture and architectural pieces, one at a time.</p>
-    </div>
-    <div class="know">
-      <article>
-        <div class="n">A · <span data-i18n="k1.n">Architectural</span></div>
-        <h3 data-i18n="k1.t">Stair railings &amp; guards</h3>
-        <p data-i18n="k1.p">Forged and fabricated railings for brownstone stairs, duplex mezzanines and roof decks. Code-compliant, NYC DOB-ready drawings, finished in blackened steel, raw wax or brass.</p>
-        <ul>
-          <li><span data-i18n="k1.l1">Brownstone stair railings</span><span data-i18n="k1.v1">from $650 / ft</span></li>
-          <li><span data-i18n="k1.l2">Mezzanine &amp; loft guards</span><span data-i18n="k1.v2">from $720 / ft</span></li>
-          <li><span data-i18n="k1.l3">Handrails, oak or brass</span><span data-i18n="k1.v3">from $180 / ft</span></li>
-        </ul>
-      </article>
-      <article>
-        <div class="n">B · <span data-i18n="k2.n">Tables</span></div>
-        <h3 data-i18n="k2.t">Dining, coffee &amp; work tables</h3>
-        <p data-i18n="k2.p">Solid white oak or walnut tops on folded or forged steel bases. Slabs sourced from Hudson Valley mills, dried and milled in the shop. Twelve feet is not a problem.</p>
-        <ul>
-          <li><span data-i18n="k2.l1">Dining tables</span><span data-i18n="k2.v1">from $7,500</span></li>
-          <li><span data-i18n="k2.l2">Coffee &amp; side tables</span><span data-i18n="k2.v2">from $2,800</span></li>
-          <li><span data-i18n="k2.l3">Desks &amp; conference tables</span><span data-i18n="k2.v3">from $6,200</span></li>
-        </ul>
-      </article>
-      <article>
-        <div class="n">C · <span data-i18n="k3.n">Storage</span></div>
-        <h3 data-i18n="k3.t">Shelving, consoles &amp; built-ins</h3>
-        <p data-i18n="k3.p">Floor-to-ceiling libraries, wall-hung shelving on solid steel uprights, consoles and credenzas with dovetailed drawers. Fitted to the room, not to a catalogue.</p>
-        <ul>
-          <li><span data-i18n="k3.l1">Library shelving</span><span data-i18n="k3.v1">from $1,200 / ft</span></li>
-          <li><span data-i18n="k3.l2">Consoles &amp; credenzas</span><span data-i18n="k3.v2">from $4,500</span></li>
-          <li><span data-i18n="k3.l3">Kitchen island bases</span><span data-i18n="k3.v3">from $5,500</span></li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="py-24 bg-charcoal-800 overflow-hidden">
+<div class="container mx-auto px-6"><div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="reveal-left relative h-[500px] w-full bg-charcoal-900 rounded-lg overflow-hidden shadow-2xl border border-bronze-500/20"><img alt="Robin Miellet Portrait" class="absolute inset-0 w-full h-full object-cover" src="https://atelierbanger.com/images/about/ab-robin-portrait.webp"></div>
+<div class="reveal-right">
+<h2 class="text-4xl md:text-5xl font-serif text-cream-100 mb-6">From France to New York</h2>
+<p class="text-cream-200 mb-6 leading-relaxed">At age 16, Robin Miellet began his apprenticeship with the <a href="https://compagnons-du-devoir.com/" target="_blank" rel="noopener noreferrer" class="text-bronze-400 hover:underline"><strong>Compagnons du Devoir</strong></a>, France's most prestigious craftsmanship guild. This demanding eight-year journey took Robin across various French regions, where he mastered techniques passed down from the era of the great cathedrals.</p>
+<p class="text-cream-200 mb-8 leading-relaxed">From 2007 to 2015, he perfected the design and fabrication of metal art pieces, a period that culminated in the creation of his masterpiece. In 2016, Robin joined La Forge De Style in New Jersey; today, he brings this heritage of excellence to New York, creating unique bronze art and bespoke furniture.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500 flex-shrink-0 mt-1" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg><div><h4 class="font-semibold text-cream-100"><a href="https://compagnons-du-devoir.com/" target="_blank" rel="noopener noreferrer" class="hover:underline">Compagnons du Devoir</a></h4><p class="text-sm text-cream-300">8 years of rigorous training in traditional French craftsmanship</p></div></div>
+<div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500 flex-shrink-0 mt-1" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><div><h4 class="font-semibold text-cream-100">20+ Years Experience</h4><p class="text-sm text-cream-300">2007-Present: From apprentice to master craftsman</p></div></div>
+<div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500 flex-shrink-0 mt-1" aria-hidden="true"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></svg><div><h4 class="font-semibold text-cream-100">Dual Expertise</h4><p class="text-sm text-cream-300">Metalworking craftsmanship &amp; professional video production</p></div></div>
+</div>
+<a class="inline-block px-8 py-3 border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all" href="about/">Discover Our Journey</a>
+</div></div></div></section>
 
-<!-- ============ SHOP ============ -->
-<section class="shop light" id="shop" style="padding-top:0">
-  <div class="wrap">
-    <div class="plate">
-      <span class="num">04 / 05</span>
-      <h2 data-i18n="sh.title">Shop</h2>
-      <p class="lead" data-i18n="sh.lead">The studio collection: limited series, made to order in Red Hook. Prices in USD.</p>
-    </div>
-    <div class="note">
-      <div><b data-i18n="n1.t">Made to order</b><span data-i18n="n1.p">Every piece is built after you order. Lead time is shown on each item; 50% deposit to start, balance before delivery.</span></div>
-      <div><b data-i18n="n2.t">Delivery</b><span data-i18n="n2.p">White-glove delivery in the five boroughs, quoted at checkout. Crated freight to the rest of the US.</span></div>
-      <div><b data-i18n="n3.t">Yours</b><span data-i18n="n3.p">Dimensions and timber can be adapted. Prices exclude NY sales tax.</span></div>
-    </div>
-    <div class="pgrid" id="products"></div>
-  </div>
-</section>
+<section class="py-24 bg-charcoal-900 overflow-hidden">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl md:text-5xl font-serif text-center text-cream-100 mb-4 reveal-up">Services</h2>
+<p class="text-center text-cream-300 mb-16 max-w-2xl mx-auto reveal-up">From concept to completion, every piece is crafted with meticulous attention to detail and traditional techniques</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="reveal-up" style="transition-delay:0.0s"><a class="group block p-8 bg-charcoal-800 hover:bg-charcoal-700 rounded-lg transition-all transform hover:-translate-y-2" href="services/#commissions">
+<div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500 mb-4 group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></div>
+<h3 class="text-2xl font-serif text-cream-100 mb-3">Custom Commissions</h3><p class="text-cream-300 leading-relaxed">Unique bronze art pieces and bespoke furniture designed and crafted specifically for your space.</p>
+<div class="mt-4 text-bronze-500 group-hover:text-bronze-400 font-semibold text-sm">Learn More →</div></a></div><div class="reveal-up" style="transition-delay:0.1s"><a class="group block p-8 bg-charcoal-800 hover:bg-charcoal-700 rounded-lg transition-all transform hover:-translate-y-2" href="services/#restoration">
+<div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500 mb-4 group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+<h3 class="text-2xl font-serif text-cream-100 mb-3">Restoration &amp; Conservation</h3><p class="text-cream-300 leading-relaxed">Expert restoration of antique metalwork and bronze pieces, preserving craftsmanship for generations.</p>
+<div class="mt-4 text-bronze-500 group-hover:text-bronze-400 font-semibold text-sm">Learn More →</div></a></div><div class="reveal-up" style="transition-delay:0.2s"><a class="group block p-8 bg-charcoal-800 hover:bg-charcoal-700 rounded-lg transition-all transform hover:-translate-y-2" href="services/#collaboration">
+<div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide text-bronze-500 mb-4 group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+<h3 class="text-2xl font-serif text-cream-100 mb-3">Collaborative Design</h3><p class="text-cream-300 leading-relaxed">Partnership with architects and interior designers to bring architectural metalwork visions to life.</p>
+<div class="mt-4 text-bronze-500 group-hover:text-bronze-400 font-semibold text-sm">Learn More →</div></a></div>
+</div>
+<div class="text-center mt-12 reveal-up"><a class="inline-block px-8 py-3 bg-transparent border-2 border-bronze-500 hover:bg-bronze-500/20 text-cream-100 font-semibold rounded transition-all" href="services/">View All Services</a></div>
+</div></section>
 
-<!-- ============ COMMISSION ============ -->
-<section class="commission" id="commission">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">05 / 05 · <span data-i18n="cm.eyebrow">Commission</span></p>
-      <h2 data-i18n-html="cm.title">Your room.<br>Your <span class="ser">measurements.</span></h2>
-      <p class="lead" data-i18n="cm.lead">Railing, table, library, kitchen island, a whole floor: describe the project and the studio replies within 48 hours with a first conversation and a budget range. Site visits across NYC are free.</p>
-      <ul class="list">
-        <li><span data-i18n="cm.l1">Brownstone stair railing, 4 floors</span><span>$18,000 – 32,000</span></li>
-        <li><span data-i18n="cm.l2">Dining table, 10 ft, oak &amp; steel</span><span>$9,500 – 14,000</span></li>
-        <li><span data-i18n="cm.l3">Library wall, floor to ceiling</span><span>$14,000 – 28,000</span></li>
-        <li><span data-i18n="cm.l4">Kitchen island base</span><span>$5,500 – 9,000</span></li>
-        <li><span data-i18n="cm.l5">Typical lead time</span><span data-i18n="cm.v5">8 – 14 weeks</span></li>
-      </ul>
-    </div>
-    <form class="f" id="commissionForm" novalidate>
-      <div class="fld"><label for="c-name" data-i18n="fm.name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>
-      <div class="fld"><label for="c-email" data-i18n="fm.email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
-      <div class="fld"><label for="c-type" data-i18n="fm.type">Type of piece</label>
-        <select id="c-type" name="type">
-          <option data-i18n="fm.t1">Stair railing / guard</option>
-          <option data-i18n="fm.t2">Table / desk</option>
-          <option data-i18n="fm.t3">Shelving / library / console</option>
-          <option data-i18n="fm.t4">Kitchen or full interior</option>
-          <option data-i18n="fm.t5">Other</option>
-        </select>
-      </div>
-      <div class="fld"><label for="c-budget" data-i18n="fm.budget">Budget range</label>
-        <select id="c-budget" name="budget">
-          <option>&lt; $5,000</option><option>$5,000 – 15,000</option><option>$15,000 – 40,000</option><option>&gt; $40,000</option>
-        </select>
-      </div>
-      <div class="fld"><label for="c-zip" data-i18n="fm.zip">Neighborhood or ZIP</label><input id="c-zip" name="zip" autocomplete="postal-code" placeholder="e.g. Park Slope, 11215"></div>
-      <div class="fld"><label for="c-when" data-i18n="fm.when">Target date</label><input id="c-when" name="when" placeholder="Spring 2027"></div>
-      <div class="fld full"><label for="c-msg" data-i18n="fm.msg">Describe the project (room, rough dimensions, materials you like, building constraints)</label><textarea id="c-msg" name="message" required></textarea></div>
-      <div class="actions">
-        <button class="btn solid" type="submit" data-i18n="fm.send">Send the request</button>
-        <span class="hint" data-i18n="fm.hint">Reply within 48 hours, Mon–Fri.</span>
-      </div>
-    </form>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <p class="big">Atelier Paname</p>
-        <p data-i18n="ft.about">Custom furniture, railings and shelving in steel, oak and brass. Made in Brooklyn by a French Compagnon du Devoir.</p>
-      </div>
-      <div>
-        <h4 data-i18n="ft.visit">Workshop</h4>
-        <p>118 Van Dyke Street<br>Red Hook, Brooklyn, NY 11231</p>
-        <p data-i18n="ft.hours">Visits by appointment, Mon–Fri</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:studio@atelierpaname.com">studio@atelierpaname.com</a></li>
-          <li><a href="tel:+17180000000">+1 (718) 000-0000</a></li>
-          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram · @atelier.paname.nyc</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="ft.nav">Browse</h4>
-        <ul>
-          <li><a href="#works" data-i18n="nav.works">Works</a></li>
-          <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
-          <li><a href="#commission" data-i18n="nav.commission">Commission</a></li>
-          <li><button type="button" id="cgvBtn" data-i18n="ft.terms">Terms of sale</button></li>
-        </ul>
-      </div>
-    </div>
-    <div class="legal">
-      <span>© <span id="year"></span> Atelier Paname LLC · Brooklyn, NY</span>
-      <span data-i18n="ft.legal">Prices in USD, excl. sales tax · Licensed &amp; insured</span>
-    </div>
-  </div>
-</footer>
-
-<!-- ============ CART ============ -->
-<div class="scrim" id="scrim"></div>
-<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
-  <header>
-    <h3 id="drawerTitle" data-i18n="ct.title">Cart</h3>
-    <button type="button" class="xbtn" id="cartClose" aria-label="Close"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
-  </header>
-  <div class="items" id="cartItems"></div>
-  <footer>
-    <div class="tot"><span data-i18n="ct.total">Subtotal</span><b id="cartTotal">$0</b></div>
-    <p class="fine" data-i18n="ct.fine">Delivery and NY sales tax quoted on the deposit invoice. 50% deposit to start production.</p>
-    <button type="button" class="btn solid" id="checkout" style="width:100%;justify-content:center" data-i18n="ct.checkout">Place order</button>
-  </footer>
-</aside>
-
-<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="box" id="modalBox"></div></div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<script>
-/* ============================================================
-   CONTENT — edit this block to change pieces, products, prices.
-   Real photos: set `photo` to an image path or URL, e.g. photo:'images/anvil.jpg' — it replaces the line drawing (`draw`).
-   ============================================================ */
-const PIECES = [
-  {id:'rail-parkslope', draw:'railing', cat:['railing'], featured:true, year:2025, place:'Brownstone, Park Slope', mats:['steel','oak'], split:'68',
-   en:{t:'Park Slope stair railing', m:'Blackened steel, white oak handrail', d:'Four floors of continuous railing for an 1890s brownstone. Forged flat-bar balusters, no two identical, set into a 2 × ½ in bottom rail. Steam-bent white oak handrail following every turn of the stair. Installed over three days with the owners in residence.', dims:'58 linear ft · 4 floors'},
-   fr:{t:'Rampe d’escalier, Park Slope', m:'Acier noirci, main courante en chêne blanc', d:'Quatre niveaux de rampe continue pour une brownstone de 1890. Barreaux forgés en plat, aucun identique, sertis dans une lisse basse de 50 × 12 mm. Main courante en chêne blanc cintré à la vapeur suivant chaque volée. Posée en trois jours, propriétaires sur place.', dims:'17,7 m linéaires · 4 niveaux'}},
-  {id:'table-tribeca', draw:'table', cat:['table','furniture'], year:2024, place:'Loft, Tribeca', mats:['oak','steel'], split:'72',
-   en:{t:'Tribeca dining table', m:'White oak, blackened steel', d:'Twelve-foot top in 2 in white oak, three boards edge-joined with walnut butterfly keys. Two folded ⅜ in steel trestles. Seats fourteen. Delivered through a fifth-floor window by crane.', dims:'144 × 42 × 30 in'},
-   fr:{t:'Table de salle à manger, Tribeca', m:'Chêne blanc, acier noirci', d:'Plateau de 3,65 m en chêne blanc de 50 mm, trois planches à joints vifs et clés papillon en noyer. Deux tréteaux en acier plié de 10 mm. Quatorze couverts. Livrée par grue au cinquième étage.', dims:'366 × 107 × 76 cm'}},
-  {id:'lib-uws', draw:'library', cat:['shelving','furniture'], featured:true, year:2025, place:'Pre-war apartment, Upper West Side', mats:['walnut','brass'], split:'82',
-   en:{t:'Upper West Side library', m:'Black walnut, brass', d:'Floor-to-ceiling library across two walls of a pre-war living room. 1½ in walnut uprights, shelves with exposed dovetails, rolling ladder on a brushed brass rail. Built around the original plaster cornice.', dims:'22 ft · 11 ft high'},
-   fr:{t:'Bibliothèque, Upper West Side', m:'Noyer noir, laiton', d:'Bibliothèque toute hauteur sur deux murs d’un salon d’avant-guerre. Montants en noyer de 40 mm, tablettes à queues d’aronde apparentes, échelle roulante sur rail en laiton brossé. Construite autour de la corniche en plâtre d’origine.', dims:'6,7 m · 3,35 m de haut'}},
-  {id:'console-reception', draw:'console', cat:['furniture'], year:2016, place:'Reception piece, Paris', mats:['walnut','steel'], split:'55',
-   en:{t:'Reception console', m:'Walnut, steel, no screws or glue', d:'The piece presented for admission as a Compagnon du Devoir: a steel base joined with tenons and wedges, a walnut top held by sliding dovetails. Fully demountable by hand. It crossed the Atlantic in a crate in 2019 and now stands in the Red Hook showroom.', dims:'55 × 15 × 35 in'},
-   fr:{t:'Console de réception', m:'Noyer, acier, sans vis ni colle', d:'La pièce présentée pour la réception comme Compagnon du Devoir : piètement d’acier assemblé à tenons et clavettes, plateau de noyer tenu par des queues d’aronde glissées. Entièrement démontable à la main. Elle a traversé l’Atlantique en caisse en 2019 et trône dans le showroom de Red Hook.', dims:'140 × 38 × 88 cm'}},
-  {id:'island-cobble', draw:'island', cat:['furniture','table'], year:2024, place:'Townhouse, Cobble Hill', mats:['steel','marble'], split:'60',
-   en:{t:'Cobble Hill kitchen island', m:'Blackened steel, honed Danby marble', d:'Steel frame in 2 in square tube with forged corner brackets, open shelving in white oak, a 2 in honed Vermont Danby marble top. Brass foot rail on the seating side.', dims:'96 × 40 × 36 in'},
-   fr:{t:'Îlot de cuisine, Cobble Hill', m:'Acier noirci, marbre Danby adouci', d:'Structure en tube carré de 50 mm à équerres forgées, étagères ouvertes en chêne blanc, plateau en marbre Danby du Vermont de 50 mm. Repose-pieds en laiton côté assises.', dims:'244 × 102 × 91 cm'}},
-  {id:'mezz-greenpoint', draw:'guard', cat:['railing'], year:2023, place:'Loft, Greenpoint', mats:['raw','glass'], split:'30',
-   en:{t:'Greenpoint mezzanine guard', m:'Waxed raw steel, laminated glass', d:'Low-profile guard for a sleeping mezzanine: 2 × 1 in raw steel posts with the mill scale left on and sealed in wax, ½ in laminated glass panels in forged clips. Open stair in the same steel with white oak treads.', dims:'34 linear ft'},
-   fr:{t:'Garde-corps de mezzanine, Greenpoint', m:'Acier brut ciré, verre feuilleté', d:'Garde-corps fin pour une mezzanine de nuit : poteaux en acier brut 50 × 25 mm, calamine conservée et cirée, panneaux de verre feuilleté 12 mm sur clips forgés. Escalier ouvert dans le même acier, marches en chêne blanc.', dims:'10,4 m linéaires'}},
-  {id:'coffee-dumbo', draw:'coffee', cat:['table','furniture'], year:2025, place:'Apartment, Dumbo', mats:['oak','brass'], split:'80',
-   en:{t:'Dumbo coffee table', m:'White oak, brass', d:'Live-edge white oak slab from a Hudson Valley mill, flattened and oiled; brass legs turned and knurled in the shop, through-fixed with visible brass wedges.', dims:'54 × 26 × 15 in'},
-   fr:{t:'Table basse, Dumbo', m:'Chêne blanc, laiton', d:'Dosse de chêne blanc à bord naturel d’une scierie de l’Hudson Valley, dressée et huilée ; pieds en laiton tournés et moletés à l’atelier, traversants à clavettes apparentes.', dims:'137 × 66 × 38 cm'}},
-  {id:'bar-williamsburg', draw:'bar', cat:['shelving'], year:2024, place:'Restaurant, Williamsburg', mats:['steel','walnut'], split:'45',
-   en:{t:'Back bar, Williamsburg', m:'Blackened steel, walnut', d:'Sixteen feet of back-bar shelving for a natural-wine restaurant: ¾ in solid steel uprights, walnut shelves with integrated LED channel, a forged bottle rail. Built to survive service.', dims:'16 ft · 9 ft high'},
-   fr:{t:'Arrière-bar, Williamsburg', m:'Acier noirci, noyer', d:'Cinq mètres d’étagères d’arrière-bar pour un restaurant de vins nature : montants en acier plein de 20 mm, tablettes en noyer à gorge LED intégrée, lisse à bouteilles forgée. Conçu pour tenir le service.', dims:'4,9 m · 2,75 m de haut'}},
-  {id:'headboard-fortgreene', draw:'headboard', cat:['furniture'], year:2023, place:'Townhouse, Fort Greene', mats:['walnut','leather','brass'], split:'50',
-   en:{t:'Fort Greene headboard', m:'Walnut, vegetable-tanned leather, brass', d:'Wall-mounted headboard and floating nightstands in black walnut, leather panels stitched by hand, brass reading lights forged and wired in the shop.', dims:'90 in wide'},
-   fr:{t:'Tête de lit, Fort Greene', m:'Noyer, cuir tannage végétal, laiton', d:'Tête de lit murale et chevets suspendus en noyer noir, panneaux de cuir cousus main, liseuses en laiton forgées et câblées à l’atelier.', dims:'229 cm de large'}},
-];
-
-const PRODUCTS = [
-  {id:'p-anvil', draw:'coffee', price:4800, lead:'8', mats:['oak','steel'], split:'70',
-   en:{t:'Anvil coffee table', d:'1¾ in solid white oak top on a folded blackened-steel base. Walnut butterfly keys.', dims:'48 × 24 × 15 in'},
-   fr:{t:'Table basse Anvil', d:'Plateau en chêne blanc massif de 45 mm sur piètement en acier plié noirci. Clés papillon en noyer.', dims:'122 × 61 × 38 cm'}},
-  {id:'p-tenon', draw:'console', price:6200, lead:'10', mats:['walnut','brass'], split:'78',
-   en:{t:'Tenon console', d:'Solid black walnut, through-tenons locked with brass wedges. Two dovetailed drawers.', dims:'52 × 15 × 34 in'},
-   fr:{t:'Console Tenon', d:'Noyer noir massif, tenons traversants bloqués par des clavettes en laiton. Deux tiroirs à queues d’aronde.', dims:'132 × 38 × 86 cm'}},
-  {id:'p-batten', draw:'shelving', price:3900, lead:'6', mats:['oak','steel'], split:'70',
-   en:{t:'Batten shelving', d:'Five solid white oak shelves on ¾ in solid steel uprights. Concealed wall fixing, any wall type.', dims:'64 × 72 × 11 in'},
-   fr:{t:'Étagère Batten', d:'Cinq tablettes en chêne blanc massif sur montants en acier plein de 20 mm. Fixation murale invisible.', dims:'163 × 183 × 28 cm'}},
-  {id:'p-traverse', draw:'bench', price:3600, lead:'7', mats:['oak','steel'], split:'72',
-   en:{t:'Traverse bench', d:'2¼ in oak seat, mitre-welded blackened-steel base. Entryway, dining or sheltered terrace.', dims:'72 × 15 × 18 in'},
-   fr:{t:'Banc Traverse', d:'Assise en chêne de 60 mm, piètement en acier noirci soudé à l’onglet. Entrée, salle à manger ou terrasse abritée.', dims:'183 × 38 × 46 cm'}},
-  {id:'p-rail', draw:'handrail', price:1900, lead:'5', mats:['steel','oak'], split:'40',
-   en:{t:'Handrail section, 8 ft', d:'Wall-mounted handrail: white oak profile on forged steel brackets. Cut to length, delivered with hardware.', dims:'96 in · custom lengths'},
-   fr:{t:'Main courante, 2,4 m', d:'Main courante murale : profil en chêne blanc sur consoles en acier forgé. Coupée à longueur, livrée avec visserie.', dims:'244 cm · longueurs sur mesure'}},
-  {id:'p-forge', draw:'lamp', price:1150, lead:'4', mats:['brass','walnut'], split:'45',
-   en:{t:'Forge table lamp', d:'Knurled brass stem, turned walnut shade. UL-listed components, dimmable, E26 bulb included.', dims:'20 in high · 12 in shade'},
-   fr:{t:'Lampe Forge', d:'Pied en laiton moleté, abat-jour en noyer tourné. Composants certifiés UL, variateur, ampoule E26 fournie.', dims:'51 cm · abat-jour 30 cm'}},
-  {id:'p-ember', draw:'candles', price:720, lead:'3', mats:['raw'],
-   en:{t:'Ember candlesticks · set of 3', d:'Hot-forged, hammered, waxed steel in three heights. Brass drip pans.', dims:'7 / 10 / 13 in'},
-   fr:{t:'Chandeliers Ember · lot de 3', d:'Acier forgé à chaud, martelé, ciré, trois hauteurs. Bobèches en laiton.', dims:'18 / 26 / 34 cm'}},
-  {id:'p-rivet', draw:'rack', price:590, lead:'3', mats:['steel','oak'], split:'35',
-   en:{t:'Rivet coat rack', d:'2 × ⅜ in blackened flat bar, six forged riveted hooks, white oak backboard.', dims:'36 × 4 in'},
-   fr:{t:'Porte-manteau Rivet', d:'Plat d’acier noirci 50 × 10 mm, six patères forgées rivetées, dosseret en chêne blanc.', dims:'91 × 10 cm'}},
-];
-
-const MATNAMES = {en:{oak:'White oak',walnut:'Walnut',ash:'Ash',steel:'Blk steel',raw:'Raw steel',brass:'Brass',glass:'Glass',leather:'Leather',marble:'Marble'},
-                  fr:{oak:'Chêne blanc',walnut:'Noyer',ash:'Frêne',steel:'Acier noirci',raw:'Acier brut',brass:'Laiton',glass:'Verre',leather:'Cuir',marble:'Marbre'}};
-
-const TICKER = {en:['Red Hook, Brooklyn','Compagnon du Devoir','Stair railings','Dining tables','Library shelving','Blackened steel','White oak','Brushed brass','Five boroughs install','Ships nationwide'],
-                fr:['Red Hook, Brooklyn','Compagnon du Devoir','Rampes d’escalier','Tables','Bibliothèques','Acier noirci','Chêne blanc','Laiton brossé','Pose à New York','Expédition USA']};
-
-const T = {
- en:{'brand.sub':'Brooklyn, NY · Est. Paris','nav.works':'Works','nav.studio':'Studio','nav.craft':'Craft','nav.shop':'Shop','nav.commission':'Commission','nav.cart':'Cart',
-  'hero.top1':'Metal & wood furniture','hero.top3':'Made to order · Ships nationwide','hero.title':'Paris craft.<br>New York <span class="ser">scale.</span>',
-  'hero.sub':'<b>Stair railings, dining tables, shelving and consoles</b> in blackened steel, white oak and brass. Designed and built by hand in a Red Hook workshop by Robin Mielleux, a French Compagnon du Devoir, for brownstones, lofts and apartments across the five boroughs.',
-  'hero.cta1':'See the works','hero.cta2':'Shop the collection','sp.h':'Studio sheet','sp.1':'Admitted Compagnon','sp.1s':'Tour de France, 7 cities','sp.2':'In New York since','sp.2s':'Workshop in Red Hook','sp.3':'Pieces installed','sp.3s':'NYC, Hudson Valley, Hamptons','sp.4':'Lead time','sp.4v':'6–14 <span style="font-family:var(--mono);font-size:.45em;letter-spacing:.1em">WKS</span><small>White-glove delivery in NYC</small>',
-  'wk.title':'Works','wk.lead':'Commissioned pieces installed in New York homes and businesses. Tap a piece for its details.','f.all':'All','f.railing':'Stair railings','f.table':'Tables','f.shelving':'Shelving','f.furn':'Furniture',
-  'st.title':'The studio','st.lead':'A French Compagnon du Devoir, trained on the Tour de France, building in Brooklyn.',
-  'st.p1':'Robin Mielleux learned iron and wood on the road. At seventeen he left for the Tour de France of the Compagnons du Devoir, the French guild whose apprentices change city and workshop every year: forge in Lyon, art metalwork in Strasbourg, cabinetmaking in Bordeaux, steel framing in Nantes, then Tours, Angers and Marseille. He was admitted as a Compagnon in 2016 after his reception piece, a steel and walnut console built without a single screw or drop of glue.',
-  'st.p2':'In 2019 he moved to New York and set up in a former shipping warehouse in Red Hook. The work changed scale with the city: railings for four-storey brownstone stairs, twelve-foot dining tables for Tribeca lofts, floor-to-ceiling libraries on the Upper West Side. The method did not. Steel carries, wood receives, brass marks the joints. Nothing is hidden: a through-tenon stays visible, a rivet stays a rivet.',
-  'st.quote':'“A true joint doesn’t need decorating. It needs to be true.”','st.who':'Robin Mielleux, Compagnon metalworker & cabinetmaker','ci.1':'Workshop','ci.2':'Trained',
-  'm.oak':'White oak','m.walnut':'Black walnut','m.steel':'Blackened steel','m.raw':'Waxed raw steel','m.brass':'Brushed brass','m.marble':'Honed marble',
-  's1.t':'Site visit','s1.p':'Measurements, photos, a conversation about how the piece will be used. Co-op and building rules checked up front. You leave with a freehand sketch.','s2.t':'Drawings','s2.p':'Scaled drawings, material and finish selection, patina samples shipped to you. Firm quote and schedule at this stage.','s3.t':'Build','s3.p':'Forging, TIG welding, milling and joinery in Red Hook. Weekly progress photos. Finishes applied and cured in the shop.','s4.t':'Install','s4.p':'White-glove delivery and installation by the studio in the five boroughs; crated freight and remote install guidance elsewhere. Care kit included.',
-  'cr.title':'What we build','cr.lead':'Furniture and architectural pieces, one at a time.',
-  'k1.n':'Architectural','k1.t':'Stair railings & guards','k1.p':'Forged and fabricated railings for brownstone stairs, duplex mezzanines and roof decks. Code-compliant, NYC DOB-ready drawings, finished in blackened steel, raw wax or brass.','k1.l1':'Brownstone stair railings','k1.v1':'from $650 / ft','k1.l2':'Mezzanine & loft guards','k1.v2':'from $720 / ft','k1.l3':'Handrails, oak or brass','k1.v3':'from $180 / ft',
-  'k2.n':'Tables','k2.t':'Dining, coffee & work tables','k2.p':'Solid white oak or walnut tops on folded or forged steel bases. Slabs sourced from Hudson Valley mills, dried and milled in the shop. Twelve feet is not a problem.','k2.l1':'Dining tables','k2.v1':'from $7,500','k2.l2':'Coffee & side tables','k2.v2':'from $2,800','k2.l3':'Desks & conference tables','k2.v3':'from $6,200',
-  'k3.n':'Storage','k3.t':'Shelving, consoles & built-ins','k3.p':'Floor-to-ceiling libraries, wall-hung shelving on solid steel uprights, consoles and credenzas with dovetailed drawers. Fitted to the room, not to a catalogue.','k3.l1':'Library shelving','k3.v1':'from $1,200 / ft','k3.l2':'Consoles & credenzas','k3.v2':'from $4,500','k3.l3':'Kitchen island bases','k3.v3':'from $5,500',
-  'sh.title':'Shop','sh.lead':'The studio collection: limited series, made to order in Red Hook. Prices in USD.','n1.t':'Made to order','n1.p':'Every piece is built after you order. Lead time is shown on each item; 50% deposit to start, balance before delivery.','n2.t':'Delivery','n2.p':'White-glove delivery in the five boroughs, quoted at checkout. Crated freight to the rest of the US.','n3.t':'Yours','n3.p':'Dimensions and timber can be adapted. Prices exclude NY sales tax.',
-  'cm.eyebrow':'Commission','cm.title':'Your room.<br>Your <span class="ser">measurements.</span>','cm.lead':'Railing, table, library, kitchen island, a whole floor: describe the project and the studio replies within 48 hours with a first conversation and a budget range. Site visits across NYC are free.',
-  'cm.l1':'Brownstone stair railing, 4 floors','cm.l2':'Dining table, 10 ft, oak & steel','cm.l3':'Library wall, floor to ceiling','cm.l4':'Kitchen island base','cm.l5':'Typical lead time','cm.v5':'8 – 14 weeks',
-  'fm.name':'Name','fm.email':'Email','fm.type':'Type of piece','fm.t1':'Stair railing / guard','fm.t2':'Table / desk','fm.t3':'Shelving / library / console','fm.t4':'Kitchen or full interior','fm.t5':'Other','fm.budget':'Budget range','fm.zip':'Neighborhood or ZIP','fm.when':'Target date','fm.msg':'Describe the project (room, rough dimensions, materials you like, building constraints)','fm.send':'Send the request','fm.hint':'Reply within 48 hours, Mon–Fri.',
-  'ft.about':'Custom furniture, railings and shelving in steel, oak and brass. Made in Brooklyn by a French Compagnon du Devoir.','ft.visit':'Workshop','ft.hours':'Visits by appointment, Mon–Fri','ft.nav':'Browse','ft.terms':'Terms of sale','ft.legal':'Prices in USD, excl. sales tax · Licensed & insured',
-  'ct.title':'Cart','ct.total':'Subtotal','ct.fine':'Delivery and NY sales tax quoted on the deposit invoice. 50% deposit to start production.','ct.checkout':'Place order',
-  add:'Add to cart',added:'Added ✓',lead:'Lead time',weeks:'wks',empty:'Your cart is empty.',remove:'Remove',each:'each',unique:'Commissioned piece',request:'Commission a similar piece',close:'Close',year:'Year',place:'Location',dims:'Dimensions',mats:'Materials',
-  orderTitle:'Your order',orderSub:'No online payment yet: the studio emails a 50% deposit invoice within 24 hours.',addr:'Delivery address',phone:'Phone',notes:'Notes (timber, dimensions, walk-up or elevator, preferred timing)',confirm:'Confirm order',
-  doneTitle:'Order prepared',doneSub:'Copy the summary below and email it to the studio, or tap the address if your mail app opens. The studio confirms lead time, delivery and tax by return.',copy:'Copy summary',copied:'Copied to clipboard',copyFail:'Select the text and copy it',
-  reqTitle:'Request ready',reqSub:'This site has no sending server yet: copy your request and email it to the studio.',
-  missing:'Please fill in the required fields.',termsTitle:'Terms of sale',
-  terms:'<p><b>Made to order.</b> Every piece is produced after confirmation. A 50% deposit starts production; the balance is due before delivery or installation.</p><p><b>Lead times.</b> Indicative, in weeks from the deposit. The studio informs you of any change.</p><p><b>Delivery.</b> White-glove delivery and installation in the five boroughs is quoted per piece and address. Elsewhere, pieces ship crated by freight; the client is responsible for unloading unless installation is contracted.</p><p><b>Living materials.</b> Solid wood and patinas evolve with time, light and humidity; variations in tone, knots and hammer marks are part of the piece. Keep indoor humidity between 35 and 55%.</p><p><b>Returns.</b> Custom and personalised pieces are final sale. Unmodified collection pieces may be returned within 14 days of delivery, in original condition, at the client’s shipping cost.</p><p><b>Warranty.</b> Two years on structure and joinery. Recommended care: hardwax oil on wood yearly, wax on raw steel.</p><p><b>Tax.</b> New York State and City sales tax is added where applicable.</p>'},
- fr:{'brand.sub':'Brooklyn, NY · Formé à Paris','nav.works':'Réalisations','nav.studio':'L’atelier','nav.craft':'Savoir-faire','nav.shop':'Boutique','nav.commission':'Sur mesure','nav.cart':'Panier',
-  'hero.top1':'Mobilier métal & bois','hero.top3':'Sur commande · Livraison USA','hero.title':'Façon Paris.<br>Échelle <span class="ser">New York.</span>',
-  'hero.sub':'<b>Rampes d’escalier, tables, bibliothèques et consoles</b> en acier noirci, chêne blanc et laiton. Dessinées et fabriquées à la main dans un atelier de Red Hook par Robin Mielleux, Compagnon du Devoir, pour les brownstones, lofts et appartements des cinq boroughs.',
-  'hero.cta1':'Voir les réalisations','hero.cta2':'Voir la collection','sp.h':'Fiche atelier','sp.1':'Reçu Compagnon','sp.1s':'Tour de France, 7 villes','sp.2':'À New York depuis','sp.2s':'Atelier à Red Hook','sp.3':'Pièces posées','sp.3s':'NYC, Hudson Valley, Hamptons','sp.4':'Délai','sp.4v':'6–14 <span style="font-family:var(--mono);font-size:.45em;letter-spacing:.1em">SEM</span><small>Livraison gants blancs à NYC</small>',
-  'wk.title':'Réalisations','wk.lead':'Pièces sur commande posées dans des maisons et commerces new-yorkais. Touchez une pièce pour ses détails.','f.all':'Tout','f.railing':'Rampes','f.table':'Tables','f.shelving':'Bibliothèques','f.furn':'Mobilier',
-  'st.title':'L’atelier','st.lead':'Un Compagnon du Devoir, formé par le Tour de France, installé à Brooklyn.',
-  'st.p1':'Robin Mielleux a appris le fer et le bois sur la route. Parti à dix-sept ans en Tour de France chez les Compagnons du Devoir, il a changé de ville et d’atelier chaque année : forge à Lyon, ferronnerie d’art à Strasbourg, ébénisterie à Bordeaux, charpente métallique à Nantes, puis Tours, Angers et Marseille. Reçu Compagnon en 2016 après son travail de réception, une console en acier et noyer assemblée sans vis ni colle.',
-  'st.p2':'En 2019, il s’installe à New York dans un ancien entrepôt portuaire de Red Hook. Le travail a changé d’échelle avec la ville : rampes pour escaliers de brownstones sur quatre niveaux, tables de 3,65 m pour des lofts de Tribeca, bibliothèques toute hauteur dans l’Upper West Side. La méthode, non. L’acier porte, le bois accueille, le laiton marque les assemblages. Rien n’est caché : un tenon traversant reste visible, un rivet reste un rivet.',
-  'st.quote':'« Un assemblage juste n’a pas besoin d’être décoré. Il a besoin d’être juste. »','st.who':'Robin Mielleux, Compagnon ferronnier & ébéniste','ci.1':'Atelier','ci.2':'Formation',
-  'm.oak':'Chêne blanc','m.walnut':'Noyer noir','m.steel':'Acier noirci','m.raw':'Acier brut ciré','m.brass':'Laiton brossé','m.marble':'Marbre adouci',
-  's1.t':'Visite','s1.p':'Relevé des cotes, photos, discussion de l’usage. Règles de la copropriété vérifiées en amont. Vous repartez avec un croquis.','s2.t':'Dessins','s2.p':'Plans à l’échelle, choix des matières et finitions, échantillons de patine expédiés. Devis ferme et planning à ce stade.','s3.t':'Fabrication','s3.p':'Forge, soudure TIG, usinage et assemblages à Red Hook. Photos d’avancement chaque semaine. Finitions appliquées et séchées à l’atelier.','s4.t':'Pose','s4.p':'Livraison gants blancs et pose par l’atelier dans les cinq boroughs ; expédition en caisse et accompagnement à distance ailleurs. Kit d’entretien inclus.',
-  'cr.title':'Ce que nous fabriquons','cr.lead':'Mobilier et pièces d’architecture, une à la fois.',
-  'k1.n':'Architecture','k1.t':'Rampes & garde-corps','k1.p':'Rampes forgées et mécano-soudées pour escaliers de brownstones, mezzanines et toits-terrasses. Conformes au code, plans prêts pour le DOB de New York, finition acier noirci, cire brute ou laiton.','k1.l1':'Rampes de brownstone','k1.v1':'dès 650 $ / pied','k1.l2':'Garde-corps de mezzanine','k1.v2':'dès 720 $ / pied','k1.l3':'Mains courantes, chêne ou laiton','k1.v3':'dès 180 $ / pied',
-  'k2.n':'Tables','k2.t':'Tables à manger, basses & de travail','k2.p':'Plateaux en chêne blanc ou noyer massif sur piètements en acier plié ou forgé. Plots issus de scieries de l’Hudson Valley, séchés et usinés à l’atelier. 3,65 m ne posent aucun problème.','k2.l1':'Tables à manger','k2.v1':'dès 7 500 $','k2.l2':'Tables basses & d’appoint','k2.v2':'dès 2 800 $','k2.l3':'Bureaux & tables de réunion','k2.v3':'dès 6 200 $',
-  'k3.n':'Rangement','k3.t':'Bibliothèques, consoles & agencements','k3.p':'Bibliothèques toute hauteur, étagères murales sur montants en acier plein, consoles et enfilades à tiroirs à queues d’aronde. Ajustées à la pièce, pas à un catalogue.','k3.l1':'Bibliothèques','k3.v1':'dès 1 200 $ / pied','k3.l2':'Consoles & enfilades','k3.v2':'dès 4 500 $','k3.l3':'Bases d’îlot de cuisine','k3.v3':'dès 5 500 $',
-  'sh.title':'Boutique','sh.lead':'La collection de l’atelier : séries limitées, fabriquées à la commande à Red Hook. Prix en dollars US.','n1.t':'Sur commande','n1.p':'Chaque pièce est fabriquée après commande. Délai indiqué sur chaque fiche ; acompte de 50 % au lancement, solde avant livraison.','n2.t':'Livraison','n2.p':'Livraison gants blancs dans les cinq boroughs, chiffrée à la commande. Expédition en caisse dans le reste des États-Unis.','n3.t':'À vos mesures','n3.p':'Dimensions et essences adaptables. Prix hors taxe de vente de l’État de New York.',
-  'cm.eyebrow':'Sur mesure','cm.title':'Votre pièce.<br>Vos <span class="ser">mesures.</span>','cm.lead':'Rampe, table, bibliothèque, îlot, un étage entier : décrivez le projet, l’atelier répond sous 48 h avec un premier échange et une fourchette de budget. Visites gratuites dans tout New York.',
-  'cm.l1':'Rampe de brownstone, 4 niveaux','cm.l2':'Table à manger 3 m, chêne & acier','cm.l3':'Mur de bibliothèque toute hauteur','cm.l4':'Base d’îlot de cuisine','cm.l5':'Délai habituel','cm.v5':'8 – 14 semaines',
-  'fm.name':'Nom','fm.email':'E-mail','fm.type':'Type de pièce','fm.t1':'Rampe / garde-corps','fm.t2':'Table / bureau','fm.t3':'Bibliothèque / étagère / console','fm.t4':'Cuisine ou intérieur complet','fm.t5':'Autre','fm.budget':'Budget','fm.zip':'Quartier ou code postal','fm.when':'Date souhaitée','fm.msg':'Décrivez le projet (pièce, dimensions approximatives, matières, contraintes de l’immeuble)','fm.send':'Envoyer la demande','fm.hint':'Réponse sous 48 h, du lundi au vendredi.',
-  'ft.about':'Mobilier, rampes et bibliothèques sur mesure en acier, chêne et laiton. Fabriqués à Brooklyn par un Compagnon du Devoir.','ft.visit':'Atelier','ft.hours':'Visites sur rendez-vous, lundi à vendredi','ft.nav':'Parcourir','ft.terms':'Conditions de vente','ft.legal':'Prix en USD hors taxes · Assuré et agréé',
-  'ct.title':'Panier','ct.total':'Sous-total','ct.fine':'Livraison et taxe de vente NY indiquées sur la facture d’acompte. Acompte de 50 % au lancement.','ct.checkout':'Commander',
-  add:'Ajouter',added:'Ajouté ✓',lead:'Délai',weeks:'sem.',empty:'Votre panier est vide.',remove:'Retirer',each:'/ pièce',unique:'Pièce sur commande',request:'Commander une pièce similaire',close:'Fermer',year:'Année',place:'Lieu',dims:'Dimensions',mats:'Matières',
-  orderTitle:'Votre commande',orderSub:'Pas de paiement en ligne pour l’instant : l’atelier envoie une facture d’acompte de 50 % sous 24 h.',addr:'Adresse de livraison',phone:'Téléphone',notes:'Précisions (essence, dimensions, étage sans ascenseur, délai souhaité)',confirm:'Confirmer la commande',
-  doneTitle:'Commande préparée',doneSub:'Copiez le récapitulatif ci-dessous et envoyez-le à l’atelier, ou touchez l’adresse si votre messagerie s’ouvre. L’atelier confirme délai, livraison et taxes par retour.',copy:'Copier le récapitulatif',copied:'Copié',copyFail:'Sélectionnez le texte et copiez-le',
-  reqTitle:'Demande prête',reqSub:'Ce site n’a pas encore de serveur d’envoi : copiez votre demande et adressez-la à l’atelier.',
-  missing:'Merci de remplir les champs obligatoires.',termsTitle:'Conditions de vente',
-  terms:'<p><b>Fabrication à la commande.</b> Chaque pièce est produite après confirmation. Un acompte de 50 % lance la fabrication ; le solde est dû avant livraison ou pose.</p><p><b>Délais.</b> Indicatifs, en semaines, à compter de l’acompte. L’atelier informe de tout décalage.</p><p><b>Livraison.</b> Livraison gants blancs et pose dans les cinq boroughs chiffrées selon la pièce et l’adresse. Ailleurs, expédition en caisse ; le déchargement est à la charge du client sauf pose contractée.</p><p><b>Matières vivantes.</b> Bois massif et patines évoluent avec le temps, la lumière et l’humidité ; variations de teinte, nœuds et traces de martelage font partie de la pièce. Maintenir l’hygrométrie entre 35 et 55 %.</p><p><b>Retours.</b> Les pièces sur mesure ou personnalisées sont fermes. Les pièces de collection non modifiées peuvent être retournées sous 14 jours, en l’état, frais de transport à la charge du client.</p><p><b>Garantie.</b> Deux ans sur la structure et les assemblages. Entretien conseillé : huile dure annuelle sur le bois, cire sur l’acier brut.</p><p><b>Taxes.</b> Taxe de vente de l’État et de la Ville de New York ajoutée le cas échéant.</p>'}
-};
-
-/* ============================================================
-   APP
-   ============================================================ */
-const $=(s,el=document)=>el.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
-let lang='en';
-try{ lang=localStorage.getItem('ap.lang')||'en'; if(!T[lang]) lang='en'; }catch(e){}
-const t=k=>(T[lang]&&T[lang][k])??T.en[k]??k;
-const fmt=n=>new Intl.NumberFormat(lang==='fr'?'fr-FR':'en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
-
-/* ---- Drafting-style line drawings, one per piece type (shown until a real photo is set) ---- */
-const DRAW = {
-  railing:`<path d="M20 112 L112 66 L112 44 L180 10"/><path d="M20 132 L112 86 L112 64 L180 30"/><path class="b" d="M20 104 L112 58 L112 36 L180 2" stroke-width="2.2"/><path d="M36 124 V96 M52 116 V88 M68 108 V80 M84 100 V72 M100 92 V64 M124 58 V30 M140 50 V22 M156 42 V14"/><path d="M20 132 V140 H38 V128 M38 128 V140 M38 140 H56 V120 M56 140 H74 V111 M74 140 H92 V102" opacity=".55"/>`,
-  table:`<path class="f" d="M14 58 H186 V68 H14 Z"/><path class="b" d="M14 58 H186"/><path d="M14 68 H186"/><path d="M46 68 L34 132 M46 68 L58 132 M34 132 H58 M154 68 L142 132 M154 68 L166 132 M142 132 H166 M40 100 H52 M148 100 H160"/><path d="M8 134 H192" opacity=".4"/>`,
-  library:`<path d="M26 12 H174 V140 H26 Z"/><path d="M26 44 H174 M26 76 H174 M26 108 H174 M100 12 V140"/><path class="b" d="M26 16 H174" stroke-width="2"/><path d="M130 140 L152 16" opacity=".9"/><path d="M134 118 H156 M137 96 H159 M140 74 H162 M143 52 H165" opacity=".7"/><path d="M40 44 V30 M48 44 V26 M58 44 V32 M112 76 V60 M120 76 V64 M130 76 V58 M40 108 V94 M50 108 V90" opacity=".6"/>`,
-  console:`<path class="f" d="M28 62 H172 V70 H28 Z"/><path d="M28 62 H172 V70 H28 Z"/><path d="M44 70 V134 M156 70 V134 M44 112 H156"/><path d="M58 76 H98 V94 H58 Z M102 76 H142 V94 H102 Z"/><path class="b" d="M74 85 H82 M118 85 H126" stroke-width="2.2"/><path class="b" d="M40 118 H48 M152 118 H160" stroke-width="2.2"/>`,
-  island:`<path class="f" d="M24 44 H176 V54 H24 Z"/><path d="M24 44 H176 V54 H24 Z"/><path d="M34 54 V134 H166 V54"/><path d="M34 134 H166"/><path d="M44 80 H110 M44 106 H110 M110 54 V134"/><path class="b" d="M120 70 H156 V118 H120 Z"/><path d="M60 80 V68 M72 80 V72 M84 80 V66" opacity=".6"/><path class="b" d="M24 124 H34" stroke-width="2.2"/>`,
-  guard:`<path d="M30 52 V128 M70 52 V128 M110 52 V128 M150 52 V128 M190 52 V128" stroke-width="2"/><path class="b" d="M22 50 H196" stroke-width="2.2"/><path class="f" d="M36 60 H64 V118 H36 Z M76 60 H104 V118 H76 Z M116 60 H144 V118 H116 Z M156 60 H184 V118 H156 Z" opacity=".9"/><path d="M8 130 H196" opacity=".4"/>`,
-  coffee:`<path class="f" d="M22 88 H178 C184 88 184 100 178 100 H22 C16 100 16 88 22 88 Z"/><path d="M22 88 H178 C184 88 184 100 178 100 H22 C16 100 16 88 22 88 Z"/><path class="b" d="M44 100 V132 M156 100 V132 M60 100 V132 M140 100 V132" stroke-width="2.2"/><path d="M8 134 H192" opacity=".4"/>`,
-  bar:`<path d="M20 16 H180 V136 H20 Z"/><path d="M20 56 H180 M20 96 H180"/><path class="b" d="M20 60 H180 M20 100 H180" opacity=".9"/><path d="M40 56 V38 M46 56 V42 M60 56 V36 M66 56 V40 M90 56 V34 M96 56 V38 M120 56 V40 M126 56 V36 M150 56 V38 M156 56 V34" opacity=".75"/><path d="M50 96 V78 M56 96 V82 M80 96 V76 M86 96 V80 M110 96 V80 M116 96 V76 M140 96 V78 M146 96 V82" opacity=".75"/><path d="M20 136 L30 128 H170 L180 136" opacity=".5"/>`,
-  headboard:`<path d="M34 34 H166 V102 H34 Z"/><path d="M60 34 V102 M100 34 V102 M140 34 V102"/><path class="f" d="M38 38 H56 V98 H38 Z M64 38 H96 V98 H64 Z M104 38 H136 V98 H104 Z M144 38 H162 V98 H144 Z"/><path d="M8 88 H30 V104 H8 Z M170 88 H192 V104 H170 Z"/><path class="b" d="M19 88 V72 M181 88 V72"/><circle class="b" cx="19" cy="68" r="4"/><circle class="b" cx="181" cy="68" r="4"/><path d="M34 102 L34 134 M166 102 L166 134 M34 134 H166" opacity=".5"/>`,
-  shelving:`<path d="M44 14 V140 M156 14 V140" stroke-width="2"/><path class="b" d="M30 38 H170 M30 64 H170 M30 90 H170 M30 116 H170" stroke-width="2"/><path d="M30 42 H170 M30 68 H170 M30 94 H170 M30 120 H170" opacity=".8"/><path d="M60 38 V26 M70 38 V22 M84 38 V28 M110 64 V50 M120 64 V54 M70 90 V78 M78 90 V74 M130 116 V104 M140 116 V100" opacity=".6"/>`,
-  bench:`<path class="f" d="M22 84 H178 V94 H22 Z"/><path d="M22 84 H178 V94 H22 Z"/><path class="b" d="M40 94 L34 132 M60 94 L66 132 M34 132 H66 M140 94 L134 132 M160 94 L166 132 M134 132 H166" stroke-width="2"/><path d="M8 134 H192" opacity=".4"/>`,
-  handrail:`<path class="b" d="M14 60 H186" stroke-width="4"/><path d="M14 66 H186" opacity=".6"/><path d="M50 64 V84 M50 84 H34 V88 H66 V84 H50 M150 64 V84 M150 84 H134 V88 H166 V84 H150"/><path d="M34 86 V124 M166 86 V124" opacity=".5"/><path d="M8 130 H192" opacity=".3"/>`,
-  lamp:`<path d="M72 34 H128 L144 76 H56 Z"/><path class="f" d="M72 34 H128 L144 76 H56 Z"/><path class="b" d="M100 76 V124" stroke-width="3"/><path class="b" d="M100 84 V116" stroke-width="5" opacity=".5"/><path class="b" d="M78 128 H122 C124 128 124 124 122 124 H78 C76 124 76 128 78 128 Z"/><path d="M8 132 H192" opacity=".3"/>`,
-  candles:`<path d="M60 128 V72 M100 128 V56 M140 128 V88" stroke-width="2.5"/><path class="b" d="M50 72 H70 M90 56 H110 M130 88 H150" stroke-width="2.5"/><path class="b" d="M48 128 H72 M88 128 H112 M128 128 H152" stroke-width="2.5"/><path d="M60 72 V60 M100 56 V44 M140 88 V76" opacity=".7"/><path class="b" d="M60 56 C56 50 64 46 60 40 M100 40 C96 34 104 30 100 24 M140 72 C136 66 144 62 140 56" opacity=".9"/><path d="M8 132 H192" opacity=".3"/>`,
-  rack:`<path class="f" d="M30 56 H170 V72 H30 Z"/><path d="M30 56 H170 V72 H30 Z"/><path class="b" d="M50 72 V88 C50 96 60 96 60 88 M74 72 V88 C74 96 84 96 84 88 M98 72 V88 C98 96 108 96 108 88 M122 72 V88 C122 96 132 96 132 88 M146 72 V88 C146 96 156 96 156 88" stroke-width="2"/><circle class="b" cx="50" cy="64" r="2"/><circle class="b" cx="98" cy="64" r="2"/><circle class="b" cx="146" cy="64" r="2"/>`
-};
-const drawSVG = k => DRAW[k] ? `<svg class="dr" viewBox="0 0 200 150" preserveAspectRatio="xMidYMid meet" aria-hidden="true">${DRAW[k]}</svg>` : '';
-
-function panelHTML(mats,split,strip,seal,photo,draw){
-  const ph=photo?`<div class="ph" style="background-image:url('${esc(photo)}')"></div>`:drawSVG(draw);
-  let inner='';
-  if(mats.length===1) inner=`<div class="m mat-${mats[0]}"></div>`;
-  else if(mats.length===2) inner=`<div class="m mat-${mats[0]}" style="${split?`flex:0 0 ${split}%`:''}"></div><div class="m mat-${mats[1]}"></div>`;
-  else inner=mats.map((m,i)=>`<div class="m mat-${m}" style="flex:${i===0?2:1}"></div>`).join('');
-  return `<div class="panel">${inner}${ph}${strip?`<span class="strip"><span>${esc(strip[0])}</span><b>${esc(strip[1]||'')}</b></span>`:''}${seal?`<span class="seal">${esc(seal)}</span>`:''}</div>`;
-}
-const matLabel=mats=>mats.map(m=>MATNAMES[lang][m]).join(' · ');
-
-/* ---- i18n ---- */
-function applyLang(){
-  document.documentElement.lang=lang;
-  $$('[data-i18n]').forEach(el=>{const v=t(el.dataset.i18n); if(v!==el.dataset.i18n) el.textContent=v;});
-  $$('[data-i18n-html]').forEach(el=>{el.innerHTML=t(el.dataset.i18nHtml);});
-  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
-  $('#ticker').innerHTML=[...TICKER[lang],...TICKER[lang]].map(s=>`<span>${esc(s)}</span>`).join('');
-  renderGallery(); renderProducts(); renderCart();
-}
-$$('.lang button').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang; try{localStorage.setItem('ap.lang',lang)}catch(e){} applyLang();}));
-$('#year').textContent=new Date().getFullYear();
-
-/* ---- dual clock ---- */
-function tick(){
-  const o={hour:'2-digit',minute:'2-digit',hour12:false};
-  try{ $('#clkNy').textContent=new Intl.DateTimeFormat('en-GB',{...o,timeZone:'America/New_York'}).format(new Date());
-       $('#clkPa').textContent=new Intl.DateTimeFormat('en-GB',{...o,timeZone:'Europe/Paris'}).format(new Date()); }catch(e){}
-}
-tick(); setInterval(tick,15000);
-
-/* ---- mobile menu ---- */
-const menuBtn=$('#menuBtn'), menu=$('#menu');
-menuBtn.addEventListener('click',()=>{const o=menu.classList.toggle('open'); menuBtn.setAttribute('aria-expanded',String(o));});
-menu.addEventListener('click',e=>{if(e.target.tagName==='A'){menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');}});
-
-/* ---- works ---- */
-let filter='all';
-function renderGallery(){
-  const list=PIECES.filter(p=>filter==='all'||p.cat.includes(filter));
-  $('#gallery').innerHTML=list.map((p,i)=>{
-    const L=p[lang];
-    return `<button type="button" class="card ${p.featured&&filter==='all'?'featured':''}" data-piece="${p.id}" aria-haspopup="dialog">
-      ${panelHTML(p.mats,p.split,[matLabel(p.mats),L.dims],`AP-${String(i+1).padStart(3,'0')}`,p.photo,p.draw)}
-      <div class="meta"><h3>${esc(L.t)}</h3><span class="yr">${p.year}</span></div>
-      <p class="mat">${esc(p.place)}</p>
-    </button>`;
-  }).join('');
-}
-$('#filters').addEventListener('click',e=>{
-  const b=e.target.closest('.chip'); if(!b) return;
-  filter=b.dataset.f; $$('.chip').forEach(c=>c.setAttribute('aria-pressed',String(c===b))); renderGallery();
-});
-$('#gallery').addEventListener('click',e=>{
-  const c=e.target.closest('[data-piece]'); if(!c) return;
-  const p=PIECES.find(x=>x.id===c.dataset.piece), L=p[lang];
-  openModal(`<button type="button" class="xbtn x" data-close aria-label="${t('close')}">✕</button>
-    <div class="detail">
-      ${panelHTML(p.mats,p.split,[matLabel(p.mats),L.dims],null,p.photo,p.draw)}
-      <div class="info">
-        <p class="eyebrow">${t('unique')} · ${p.year}</p>
-        <h3>${esc(L.t)}</h3>
-        <p class="desc">${esc(L.d)}</p>
-        <dl class="spec">
-          <dt>${t('mats')}</dt><dd>${esc(L.m)}</dd>
-          <dt>${t('dims')}</dt><dd>${esc(L.dims)}</dd>
-          <dt>${t('place')}</dt><dd>${esc(p.place)}</dd>
-        </dl>
-        <div class="acts"><a class="btn solid" href="#commission" data-close>${t('request')}</a></div>
-      </div>
-    </div>`);
-});
-
-/* ---- shop & cart ---- */
-let cart={};
-try{ cart=JSON.parse(localStorage.getItem('ap.cart')||'{}')||{}; }catch(e){cart={};}
-const saveCart=()=>{try{localStorage.setItem('ap.cart',JSON.stringify(cart))}catch(e){}};
-function renderProducts(){
-  $('#products').innerHTML=PRODUCTS.map(p=>{
-    const L=p[lang];
-    return `<article class="prod">
-      ${panelHTML(p.mats,p.split,[matLabel(p.mats),''],null,p.photo,p.draw)}
-      <div class="body">
-        <span class="lead">${t('lead')} · ${p.lead} ${t('weeks')}</span>
-        <h3>${esc(L.t)}</h3>
-        <p class="desc">${esc(L.d)}</p>
-        <span class="dim">${esc(L.dims)}</span>
-        <div class="row"><span class="price">${fmt(p.price)}</span><button type="button" class="btn sm" data-add="${p.id}">${t('add')}</button></div>
-      </div>
-    </article>`;
-  }).join('');
-}
-$('#products').addEventListener('click',e=>{
-  const b=e.target.closest('[data-add]'); if(!b) return;
-  cart[b.dataset.add]=(cart[b.dataset.add]||0)+1; saveCart(); renderCart();
-  b.textContent=t('added'); b.classList.add('added'); setTimeout(()=>{b.textContent=t('add'); b.classList.remove('added');},1200);
-  toast(t('added'));
-});
-const cartLines=()=>Object.entries(cart).map(([id,q])=>({p:PRODUCTS.find(x=>x.id===id),q})).filter(l=>l.p&&l.q>0);
-const cartTotal=()=>cartLines().reduce((s,l)=>s+l.p.price*l.q,0);
-function renderCart(){
-  const lines=cartLines(), n=lines.reduce((s,l)=>s+l.q,0);
-  $('#cartCount').textContent=n; $('#cartTotal').textContent=fmt(cartTotal());
-  $('#checkout').disabled=n===0; $('#checkout').style.opacity=n===0?'.45':'1';
-  $('#cartItems').innerHTML=n===0?`<p class="empty">${t('empty')}</p>`:lines.map(({p,q})=>`
-    <div class="ci">
-      ${panelHTML(p.mats,p.split,null,null,p.photo,p.draw)}
-      <div><div class="t">${esc(p[lang].t)}</div><div class="s">${fmt(p.price)} ${t('each')} · ${t('lead')} ${p.lead} ${t('weeks')}</div>
-        <div class="q"><button type="button" data-q="${p.id}" data-d="-1" aria-label="−">−</button><span>${q}</span><button type="button" data-q="${p.id}" data-d="1" aria-label="+">+</button></div></div>
-      <div><div class="p">${fmt(p.price*q)}</div><button type="button" class="rm" data-rm="${p.id}">${t('remove')}</button></div>
-    </div>`).join('');
-}
-$('#cartItems').addEventListener('click',e=>{
-  const q=e.target.closest('[data-q]'), rm=e.target.closest('[data-rm]');
-  if(q){cart[q.dataset.q]=Math.max(0,(cart[q.dataset.q]||0)+Number(q.dataset.d)); if(!cart[q.dataset.q]) delete cart[q.dataset.q];}
-  if(rm) delete cart[rm.dataset.rm];
-  if(q||rm){saveCart(); renderCart();}
-});
-const drawer=$('#drawer'), scrim=$('#scrim');
-function openCart(){drawer.classList.add('on'); scrim.classList.add('on'); $('#cartClose').focus();}
-function closeCart(){drawer.classList.remove('on'); scrim.classList.remove('on');}
-$('#cartOpen').addEventListener('click',openCart); $('#cartClose').addEventListener('click',closeCart); scrim.addEventListener('click',closeCart);
-
-/* ---- checkout ---- */
-$('#checkout').addEventListener('click',()=>{
-  if(!cartLines().length) return; closeCart();
-  const sum=cartLines().map(({p,q})=>`<div><span>${q} × ${esc(p[lang].t)}</span><span>${fmt(p.price*q)}</span></div>`).join('')+`<div class="tt"><span>${t('ct.total')}</span><span>${fmt(cartTotal())}</span></div>`;
-  openModal(`<button type="button" class="xbtn x" data-close aria-label="${t('close')}">✕</button>
-    <div class="order light">
-      <p class="eyebrow">${t('nav.shop')}</p><h3>${t('orderTitle')}</h3>
-      <div class="sum">${sum}</div>
-      <form class="f" id="orderForm" novalidate>
-        <div class="fld"><label for="o-name">${t('fm.name')}</label><input id="o-name" name="name" autocomplete="name" required></div>
-        <div class="fld"><label for="o-email">${t('fm.email')}</label><input id="o-email" name="email" type="email" autocomplete="email" required></div>
-        <div class="fld"><label for="o-phone">${t('phone')}</label><input id="o-phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="fld"><label for="o-addr">${t('addr')}</label><input id="o-addr" name="address" autocomplete="street-address" required></div>
-        <div class="fld full"><label for="o-notes">${t('notes')}</label><textarea id="o-notes" name="notes" style="min-height:80px"></textarea></div>
-        <div class="actions"><button class="btn solid" type="submit">${t('confirm')}</button><span class="hint">${t('orderSub')}</span></div>
-      </form>
-    </div>`);
-  $('#orderForm').addEventListener('submit',e=>{
-    e.preventDefault(); const f=e.target;
-    if(!f.name.value.trim()||!f.email.value.trim()||!f.address.value.trim()){toast(t('missing')); return;}
-    const lines=cartLines().map(({p,q})=>`  ${q} × ${p[lang].t} — ${fmt(p.price*q)} (${t('lead')} ${p.lead} ${t('weeks')})`).join('\n');
-    const txt=`${t('orderTitle')} — Atelier Paname\n${new Date().toLocaleDateString(lang==='fr'?'fr-FR':'en-US')}\n\n${lines}\n  ${t('ct.total')}: ${fmt(cartTotal())}\n\n${t('fm.name')}: ${f.name.value}\n${t('fm.email')}: ${f.email.value}\n${t('phone')}: ${f.phone.value||'—'}\n${t('addr')}: ${f.address.value}\n${t('notes')}: ${f.notes.value||'—'}`;
-    showDone(t('doneTitle'),t('doneSub'),txt,`${t('orderTitle')} — ${f.name.value}`);
-    cart={}; saveCart(); renderCart();
-  });
-});
-
-/* ---- commission form ---- */
-$('#commissionForm').addEventListener('submit',e=>{
-  e.preventDefault(); const f=e.target;
-  if(!f.name.value.trim()||!f.email.value.trim()||!f.message.value.trim()){toast(t('missing')); return;}
-  const txt=`${t('cm.eyebrow')} — Atelier Paname\n\n${t('fm.name')}: ${f.name.value}\n${t('fm.email')}: ${f.email.value}\n${t('fm.type')}: ${f.type.value}\n${t('fm.budget')}: ${f.budget.value}\n${t('fm.zip')}: ${f.zip.value||'—'}\n${t('fm.when')}: ${f.when.value||'—'}\n\n${f.message.value}`;
-  showDone(t('reqTitle'),t('reqSub'),txt,`${t('cm.eyebrow')} — ${f.name.value}`);
-  f.reset();
-});
-
-function showDone(title,sub,txt,subject){
-  const mail='studio@atelierpaname.com';
-  const href=`mailto:${mail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(txt)}`;
-  openModal(`<button type="button" class="xbtn x" data-close aria-label="${t('close')}">✕</button>
-    <div class="done">
-      <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><rect x="1" y="1" width="42" height="42" rx="2" fill="none" stroke="#C9A24E" stroke-width="1.2"/><path d="M13 23l6 6 12-13" fill="none" stroke="#C9A24E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <h3>${esc(title)}</h3><p>${esc(sub)}</p>
-      <pre id="doneTxt">${esc(txt)}</pre>
-      <div class="acts"><button type="button" class="btn solid" id="copyBtn">${t('copy')}</button><a class="btn" href="${href}">${mail}</a></div>
-    </div>`,true);
-  $('#copyBtn').addEventListener('click',async()=>{
-    try{ await navigator.clipboard.writeText(txt); toast(t('copied')); }
-    catch(e){ const r=document.createRange(); r.selectNodeContents($('#doneTxt')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); toast(t('copyFail')); }
-  });
-}
-
-/* ---- terms ---- */
-$('#cgvBtn').addEventListener('click',()=>openModal(`<button type="button" class="xbtn x" data-close aria-label="${t('close')}">✕</button><div class="order light"><p class="eyebrow">Atelier Paname</p><h3>${t('termsTitle')}</h3><div style="font-size:15px;color:var(--mute);display:grid;gap:12px">${t('terms')}</div></div>`,true));
-
-/* ---- modal ---- */
-const modal=$('#modal'), box=$('#modalBox'); let lastFocus=null;
-function openModal(html,narrow){lastFocus=document.activeElement; box.className='box'+(narrow?' narrow':''); box.innerHTML=html; modal.classList.add('on'); document.body.style.overflow='hidden'; const x=$('.x',box); if(x) x.focus();}
-function closeModal(){modal.classList.remove('on'); box.innerHTML=''; document.body.style.overflow=''; if(lastFocus&&lastFocus.focus) lastFocus.focus();}
-modal.addEventListener('click',e=>{if(e.target===modal||e.target.closest('[data-close]')) closeModal();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal(); closeCart();}});
-
-/* ---- toast ---- */
-let toastT; function toast(m){const el=$('#toast'); el.textContent=m; el.classList.add('on'); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('on'),1800);}
-
-applyLang();
-</script>
+<section class="py-24 bg-charcoal-900">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-serif text-cream-100 mb-6">Ready to Commission a Unique Piece?</h2>
+<p class="text-xl text-cream-200 mb-12 max-w-2xl mx-auto">Whether you're seeking a statement furniture piece, architectural metalwork, or a custom bronze sculpture, let's bring your vision to life together.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-bronze-600 hover:bg-bronze-700 text-black font-semibold rounded transition-all transform hover:scale-105" href="contact/">Start a Project<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide " aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-cream-100 hover:bg-white/10 text-cream-100 font-semibold rounded transition-all" href="portfolio/">View Portfolio</a></div>
+<p class="mt-8 text-cream-300 text-sm">Average response time: 24-48 hours</p>
+</div></section>
+</main>
+<footer class="bg-charcoal-900 text-cream-100 py-16 border-t border-cream-800">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div><h3 class="text-2xl font-serif text-bronze-500 mb-4">Atelier Banger</h3><p class="text-sm text-cream-200 leading-relaxed">Unique bronze art &amp; bespoke furniture crafted with time-honored craftsmanship</p></div>
+<div><h4 class="font-semibold mb-4 uppercase tracking-wider text-sm">Explore</h4><ul class="space-y-2">
+<li><a class="text-sm hover:text-bronze-500 transition-colors" href="about/">About</a></li>
+<li><a class="text-sm hover:text-bronze-500 transition-colors" href="portfolio/">Portfolio</a></li>
+<li><a class="text-sm hover:text-bronze-500 transition-colors" href="services/">Services</a></li>
+<li><a class="text-sm hover:text-bronze-500 transition-colors" href="collection/">Banger Collection</a></li>
+<li><a class="text-sm hover:text-bronze-500 transition-colors" href="contact/">Contact</a></li></ul></div>
+<div><h4 class="font-semibold mb-4 uppercase tracking-wider text-sm">Contact</h4><ul class="space-y-3 text-sm">
+<li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide mt-1 text-bronze-500 flex-shrink-0" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>Jersey City, NJ</span></li>
+<li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide mt-1 text-bronze-500 flex-shrink-0" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@atelierbanger.com" class="hover:text-bronze-500 transition-colors">info@atelierbanger.com</a></li>
+<li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide mt-1 text-bronze-500 flex-shrink-0" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+12015981874" class="hover:text-bronze-500 transition-colors">(201) 598-1874</a></li></ul></div>
+<div><h4 class="font-semibold mb-4 uppercase tracking-wider text-sm">Stay Connected</h4><div class="flex gap-4 mb-6">
+<a href="https://www.instagram.com/atelierbanger/" target="_blank" rel="noopener noreferrer" class="inline-block" aria-label="Instagram"><img alt="Follow Atelier Banger on Instagram" width="40" height="40" class="rounded-xl bg-charcoal-700 hover:bg-bronze-500/20 transition-all p-1.5" src="https://atelierbanger.com/instagram-logo-black.avif"></a>
+<a href="https://www.linkedin.com/company/atelier-banger/" target="_blank" rel="noopener noreferrer" class="inline-block" aria-label="LinkedIn"><img alt="Follow Atelier Banger on LinkedIn" width="40" height="40" class="rounded-xl bg-charcoal-700 hover:bg-bronze-500/20 transition-all p-1.5" src="https://atelierbanger.com/linkedin-logo.avif"></a></div></div>
+</div>
+<div class="mt-12 pt-8 border-t border-cream-800 flex flex-col md:flex-row justify-between items-center text-sm text-cream-300">
+<p>© 2026 Atelier Banger. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 md:mt-0"><a class="hover:text-bronze-500 transition-colors" href="privacy/">Privacy Policy</a><a class="hover:text-bronze-500 transition-colors" href="terms/">Terms of Service</a></div>
+</div></div></footer>
+<div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/95 p-4" role="dialog" aria-modal="true" aria-label="Image"><button id="lbClose" class="absolute top-4 right-4 text-cream-100 hover:text-bronze-500 p-2" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide " aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button><img id="lbImg" alt="" class="max-h-[90vh] max-w-full object-contain rounded-lg shadow-2xl"></div>
+<script src="assets/site.js"></script>
 </body>
 </html>

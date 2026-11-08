@@ -1,27 +1,18 @@
-# Atelier Paname — site web
+# Atelier Banger — website
 
-Site vitrine et boutique de l'Atelier Paname (Robin Mielleux, Compagnon du Devoir, Red Hook, Brooklyn) : rampes d'escalier, tables, bibliothèques et mobilier sur mesure en acier, chêne et laiton. Site en anglais par défaut, bascule FR/EN dans la barre de navigation ; prix en USD.
+Static reproduction of atelierbanger.com (Robin Miellet, Compagnon du Devoir). Hosted with GitHub Pages from the `main` branch.
 
-Le site tient dans un seul fichier, `index.html` (HTML, CSS et JavaScript inclus, aucune dépendance à installer).
+## Layout
 
-## Publier avec GitHub Pages
+- `index.html`, `about/`, `services/`, `portfolio/` (+ one folder per project), `collection/`, `contact/`, `artisans/`, `privacy/`, `terms/` — the generated pages, same URLs as the original site.
+- `assets/site.css`, `assets/site.js` — shared styles (Tailwind via CDN + a few custom rules) and behaviour (header, carousel, galleries, lightbox, portfolio filter, timeline, contact form).
+- `builder/data.py` — **all content**: site details, featured carousel, portfolio projects, collection pieces, about timeline, workshop photos.
+- `builder/build.py` — page templates. Run `python3 builder/build.py .` from the repo root to regenerate every page after editing `data.py`.
 
-1. Settings → Pages → Source : « Deploy from a branch », branche `main`, dossier `/ (root)`.
-2. Le site est servi à `https://gluu-design.github.io/RobinWorkshop/`.
-3. Pour un nom de domaine propre, ajouter un fichier `CNAME` contenant le domaine et pointer le DNS vers GitHub Pages.
+## Images
 
-## Modifier le contenu
+Images and the hero video currently load from `https://atelierbanger.com` (`ASSET` in `builder/data.py`). To host them here, copy the `images/` folder (same paths) into this repo, set `ASSET = ""` and rebuild.
 
-Tout le contenu éditable est en tête du `<script>` dans `index.html` :
+## Contact form
 
-- `PIECES` : les créations de la galerie (titre, matières, description, dimensions, lieu, année).
-- `PRODUCTS` : les articles de la boutique (prix TTC, délai en semaines, dimensions).
-- `T` : tous les textes du site en anglais (`en`, langue par défaut) et en français (`fr`).
-- `TICKER` : le bandeau défilant, par langue.
-- Coordonnées (adresse, e-mail, téléphone, Instagram, SIRET) : dans le `<footer>` et dans la constante `mail` de la fonction `showDone`.
-
-Pour afficher de vraies photos, renseigner le champ `photo` d'une pièce ou d'un produit avec l'URL de l'image (par exemple `photo:'images/table-enclume.jpg'`) ; la photo remplace alors l'aplat de matière.
-
-## Commandes
-
-Pas de paiement en ligne : la commande génère un récapitulatif que le client copie ou envoie par e-mail à l'atelier (acompte de 50 % à la commande). Un lien de paiement Stripe ou un bouton Shopify peut être branché sur les boutons « Ajouter » ultérieurement.
+GitHub Pages has no server, so "Send Inquiry" opens the visitor's mail app with the inquiry prefilled, addressed to info@atelierbanger.com. For a real form backend, connect Formspree, Netlify Forms or similar in `assets/site.js`.
